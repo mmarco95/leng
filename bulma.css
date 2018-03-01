@@ -9663,9 +9663,12 @@ label.panel-block:hover {
 }
 
 .tile.is-ancestor {
-  margin-left: -0.75rem;
+  /*margin-left: -0.75rem;
   margin-right: -0.75rem;
-  margin-top: -0.75rem;
+  margin-top: -0.75rem;*/
+  margin-left: -0.50rem;
+  margin-right: -0.50rem;
+  margin-top: -0.50rem;
 }
 
 .tile.is-ancestor:last-child {
@@ -10714,6 +10717,7 @@ label.panel-block:hover {
 
 .footer {
   background-color: whitesmoke;
-  padding: 3rem 1.5rem 6rem;
+  /*padding: 3rem 1.5rem 6rem;*/
+  padding:0;
 }
 /*# sourceMappingURL=bulma.css.map */
