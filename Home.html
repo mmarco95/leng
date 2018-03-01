@@ -12,21 +12,14 @@
         }
         #navbar{
             width:100%;
-            height:10%;
+            height:100%;
             background-color: #3B5998;
             float:top;        
         }
 
-        #lato{
-            width:20%;
-            height:90%;
-            background-color: rgb(224, 159, 17);
-            float:left;      
-        }
-
         #corpo{
             width:100%;
-            height:80%;
+            height:100%;
                   
         }
         
@@ -42,65 +35,30 @@
         }   
 
         #confronta{
+            margin-right:20px;
             background-color:red;
-            border-color: white;
+            border-color: black;
+            color: white;
+            height: 80px;
+            width: 200px;
             
         }
-        /*#anno{
-            width:10%;
-            height:50%;
-            background-color: rgb(102, 214, 102);
-            float:left;        
+
+        .navbar{
+            background-color: orange;
         }
 
-        #livello{
-            width:10%;
-            height:50%;
-            background-color: rgb(102, 214, 102);
-            float:left;        
+        .tile{
+            margin-top: 10px;
         }
 
-        #prova{
-            width:20%;
-            height:50%;
-            background-color: rgb(102, 214, 102);
-            float:left;        
-        }
+        
 
-        #tipo{
-            width:20%;
-            height:50%;
-            background-color: rgb(102, 214, 102);
-            float:left;        
-        }
-
-        #ind{
-            width:40%;
-            height:50%;
-            background-color: rgb(102, 214, 102);
-            float:left;        
-        }
-
-        h2{
-            margin-left: 20px;
-        }
-
-        h1{
-            color: white;
-            margin-left: 32%;           
-        }
-
-        #confro{
-            margin-top: 50%;
-            margin-left: 25%;
-        }*/
-
+        
     </style>
     <body>
 
-        <div id="navbar"> 
-            <h1>TRENTINO LANGUAGE TESTING</h1>       
-        </div>
+      
 
         <!--<div id="lato"> 
                
@@ -114,6 +72,13 @@
             </div>-->
 
         <div id="corpo">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                        <div class="navbar-brand">
+                          <a class="navbar-item" href="http://www.iprase.tn.it/">
+                            <img src="http://www.iprase.tn.it/wp-content/uploads/2013/09/logo2016-trasparente.png" width="112" height="30">
+                          </a>
+                      </nav>
+        <div class="container">
             <div class="tile is-ancestor">
                     <div class="tile is-parent">
                             <article class="tile is-child box">
@@ -176,6 +141,7 @@
                     </label>
                   </article>
                 </div>
+                
                 <div class="tile is-parent">
                   <article class="tile is-child box">
                     <p class="title">Tipo domanda</p>
@@ -220,9 +186,15 @@
               </div>      
 
         </div>
-        <div id="basso">
+    
+        <div class="footer">
+            
+        <div class="content has-text-centered">
             <a class="button is-rounded" id="confronta">Confronta</a>
             <a class="button is-rounded" id="confronta">Visualizza</a>
         </div>
+        </div>
+        </div>
+    
     </body>
 </html>
