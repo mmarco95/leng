@@ -1,5 +1,6 @@
 <html>
     <script type="text/javascript" src="chart.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <head>
     <style>
         body{
@@ -33,14 +34,50 @@
     </body>
 
 <script>
+        var jsonfile = $.getJSON( "data.json", function() {
+            console.log( "success" );
+        })
+
+
+    /*var jsonfile = {
+        "jsonarray": [{"livello":0,"frequency":395},
+        {"livello":2,"frequency":409},
+        {"livello":4,"frequency":230}]
+        };
+
+        var labels = jsonfile.jsonarray.map(function(e) {
+   return e.livello;
+});
+var data = jsonfile.jsonarray.map(function(e) {
+   return e.frequency;
+});;*/
+
+/*function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}*/
+
+    //usage:
+    /*readTextFile("data.json", function(text){
+        var data = JSON.parse(text);
+        console.log(data);
+    });*/
+
     var ctx = document.getElementById("myChart");
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ["0", "2", "4"],
+            labels: Object.keys(jsonfile),
             datasets: [{
                 label: '# of Votes',
-                data: [395, 409, 230],
+                data: Object.values(jsonfile),
                 backgroundColor: [
                     'rgba(255, 99, 132, 0)',
                     'rgba(255, 99, 132, 0.8)',
@@ -110,5 +147,7 @@
         }
         
     });
+
+    
 </script>
 </html>
