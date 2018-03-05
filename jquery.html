@@ -1,0 +1,22 @@
+<html>
+    <script type="text/javascript" src="chart.js"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <head>
+
+</head>
+
+<script>
+    $.ajax({
+        url: 'prova.json',
+        dataType:'json',
+        type: 'get',
+        cache: false,
+        success: function(data) {
+                $(data.prova).each(function(index, value){
+                    console.log(value.frequency);
+                });
+            }
+        }); 
+</script>
+</html>
