@@ -2,40 +2,83 @@
     <script type="text/javascript" src="chart.js"></script>
  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="bulma.css">
+  
     <head>
-    <style>
-        body{
-            margin:0;
-            padding: 0;
-        }
+        <style>
+            body{
+                margin:0;
+                padding: 0;
+            }
 
-        #cane{
-            width:20%;
-            height:20%;
-            float: left;
-            
-        }
+            #cane{
+                width:20%;
+                height:20%;
+                float: left;            
+            }
 
-        #gatto{
-            width:20%;
-            height:20%;
-            float: left;
+            #gatto{
+                width:20%;
+                height:20%;
+                float: left;           
+            }    
+
+            .title{
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .container{            
+                height: 100%;
+                width:100%;
+            }
             
-        }     
-    </style>
-</head>
+        </style>
+    </head>
+
     <body>
-        <div id="cane">
-        <canvas id="myChart" width="100" height="100"></canvas>
-    </div>
+        
+        <!--<div id="cane">
+            <canvas id="myChart" width="100" height="100"></canvas>
+        </div>-->
 
-    <div id="gatto">
+        <!--<div id="gatto">
             <canvas id="myChart2" width="100" height="100"></canvas>
+        </div>-->
+
+        <div class="container">
+            <p align="center">TEDESCO A1</p>
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Lessico</p>
+                        <br><br><br>
+                        <canvas id="myChart"></canvas>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Correttezza competenze formali</p>
+                        <br><br><br>
+                        <canvas id="myChart2"></canvas>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Correttezza competenze formali</p>
+                        <br><br><br>
+                        <canvas id="myChart3"></canvas>
+                    </article>
+                </div>
+            </div>
         </div>
     </body>
 
-<script>
-        
+    <script>
+    
         /*$.getJSON( "persone.json", function() {
             console.log( "success" );
         })
@@ -71,18 +114,6 @@ var data = jsonfile.jsonarray.map(function(e) {
         console.log(data);
         //document.write(data);
     });*/
-
-    $.ajax({
-        url: 'persone.json',
-        dataType:'json',
-        type: 'get',
-        cache: false,
-        success: function(data) {
-                $(data.persone).each(function(index, value){
-                    console.log(value.frequecy);
-                });
-            }
-        });
 
         /*var jsonfile = {
         "jsonarray": [{
@@ -130,8 +161,6 @@ var data = jsonfile.jsonarray.map(function(e) {
             }]
             };
 
-            
-
             var labels = jsonfile.prova.map(function(e) {
             return e.name;
             });
@@ -152,101 +181,143 @@ var data = jsonfile.jsonarray.map(function(e) {
     //var str = JSON.stringify(data, null, 2)
     //document.write(data);
 
-    $.ajax({
-        url: 'prova.json',
-        dataType:'json',
-        type: 'get',
-        cache: false,
-        success: function(data) {
+    
+    
+        /*$.ajax({
+            url: 'prova.json',
+            dataType:'json',
+            type: 'get',
+            cache: false,
+            success: function(data) {
                 $(data.prova).each(function(index, value){
-                    console.log(value);
+                console.log(value.livello);                      
                 });
-            }
-        }); 
-
-    var labels = data.prova.map(function(e) {
-    return e.livello;
-    });
-    var data = data.prova.map(function(e) {
-    return e.frequency;
-    });;
-
-    var ctx = document.getElementById("myChart");
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: '# of Votes',
-                data: data,
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0)',
-                    'rgba(255, 99, 132, 0.8)',
-                    'rgba(54, 162, 235, 0.8)',
-                    'rgba(255, 206, 86, 0.8)',
-                    
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
-
-    var ctx = document.getElementById("myChart2");
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ["0", "2", "4"],
-            datasets: [{
-                label: '# of Votes',
-                data: [395, 409, 230],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.8)',
-                    'rgba(54, 162, 235, 0.8)',
-                    'rgba(255, 206, 86, 0.8)',
-                    
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }],
-                legend: {
-        display: false
-    },
-    tooltips: {
-        callbacks: {
-           label: function(tooltipItem) {
-                  return tooltipItem.yLabel;
-           }
-        }
-    }
+            
             }          
-        }
-        
-    });   
-</script>
+        }); */
+
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["0", "2", "4"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [557, 366, 92],
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 0.8)',
+                        'rgba(255, 128, 0, 0.8)',
+                        'rgba(51, 255, 51, 0.8)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(255, 128, 0, 1)',
+                        'rgba(51, 255, 51, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    callbacks: {
+                    label: function(tooltipItem) {
+                            return tooltipItem.yLabel;
+                    }
+                    }
+                }
+            }
+        });
+    
+        var ctx = document.getElementById("myChart2");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["0", "2", "4"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [621, 339, 55],
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 0.8)',
+                        'rgba(255, 128, 0, 0.8)',
+                        'rgba(51, 255, 51, 0.8)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(255, 128, 0, 1)',
+                        'rgba(51, 255, 51, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                },
+            
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return tooltipItem.yLabel;
+                        }
+                    }
+                }
+            }        
+        });     
+
+        var ctx = document.getElementById("myChart3");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["0", "2", "4"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [529, 369, 117],
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 0.8)',
+                        'rgba(255, 128, 0, 0.8)',
+                        'rgba(51, 255, 51, 0.8)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(255, 128, 0, 1)',
+                        'rgba(51, 255, 51, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                },
+            
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    callbacks: {
+                    label: function(tooltipItem) {
+                            return tooltipItem.yLabel;
+                        }
+                    }
+                }
+            } 
+        });       
+    </script>
 </html>
