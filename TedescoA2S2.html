@@ -17,17 +17,7 @@
                 height:100%;                   
             } 
 
-            #cane{
-                width:20%;
-                height:20%;
-                float: left;            
-            }
-
-            #gatto{
-                width:20%;
-                height:20%;
-                float: left;           
-            }    
+          
 
             .title{
                 font-weight: bold;
@@ -41,6 +31,12 @@
 
             .navbar{
                 background-color: orange;
+            }
+
+            #titolo{
+                font-size: 40px;
+                font-weight: bold;
+                color:black;
             }
             
         </style>
@@ -65,7 +61,7 @@
             </nav>
                         
             <div class="container">
-                <p align="center">TEDESCO A1</p>
+                <p align="center" id="titolo">TEDESCO A2</p>
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
                         <article class="tile is-child box">
@@ -85,13 +81,39 @@
 
                     <div class="tile is-parent">
                         <article class="tile is-child box">
-                            <p class="title">Correttezza competenze formali</p>
+                            <p class="title">Adempimento alla consegna</p>
                             <br>
                             <canvas id="myChart3"></canvas>
                         </article>
                     </div>
                 </div>
-            </div>
+                    <div class="tile is-ancestor">
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">Capacit&agrave; descrittive</p>
+                                <br>
+                                <canvas id="myChart4"></canvas>
+                            </article>
+                        </div>
+    
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">Capacit&agrave; esprimere proprie opinioni</p>
+                                <br>
+                                <canvas id="myChart5"></canvas>
+                            </article>
+                        </div>
+
+                        <div class="tile is-parent">
+                                <article class="tile is-child box">
+                                    <p class="title">Coerenza e coesione</p>
+                                    <br>
+                                    <canvas id="myChart6"></canvas>
+                                </article>
+                            </div>
+        
+                        </div>
+                    </div>
         </div>
     </body>
 
@@ -221,7 +243,7 @@ var data = jsonfile.jsonarray.map(function(e) {
                 labels: ["0", "2", "4"],
                 datasets: [{
                     label: '# of Votes',
-                    data: [557, 366, 92],
+                    data: [522, 651, 213],
                     backgroundColor: [
                         'rgba(255, 0, 0, 0.8)',
                         'rgba(255, 128, 0, 0.8)',
@@ -265,7 +287,7 @@ var data = jsonfile.jsonarray.map(function(e) {
                 labels: ["0", "2", "4"],
                 datasets: [{
                     label: '# of Votes',
-                    data: [621, 339, 55],
+                    data: [508, 793, 85],
                     backgroundColor: [
                         'rgba(255, 0, 0, 0.8)',
                         'rgba(255, 128, 0, 0.8)',
@@ -309,7 +331,143 @@ var data = jsonfile.jsonarray.map(function(e) {
                 labels: ["0", "2", "4"],
                 datasets: [{
                     label: '# of Votes',
-                    data: [529, 369, 117],
+                    data: [215, 677, 494],
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 0.8)',
+                        'rgba(255, 128, 0, 0.8)',
+                        'rgba(51, 255, 51, 0.8)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(255, 128, 0, 1)',
+                        'rgba(51, 255, 51, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                },
+            
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    callbacks: {
+                    label: function(tooltipItem) {
+                            return tooltipItem.yLabel;
+                        }
+                    }
+                }
+            } 
+        });
+
+
+
+
+
+        var ctx = document.getElementById("myChart4");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["0", "2", "4"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [605, 521, 260],
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 0.8)',
+                        'rgba(255, 128, 0, 0.8)',
+                        'rgba(51, 255, 51, 0.8)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(255, 128, 0, 1)',
+                        'rgba(51, 255, 51, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                },
+            
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return tooltipItem.yLabel;
+                        }
+                    }
+                }
+            }
+        });
+    
+        var ctx = document.getElementById("myChart5");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["0", "2", "4"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [730, 450, 206],
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 0.8)',
+                        'rgba(255, 128, 0, 0.8)',
+                        'rgba(51, 255, 51, 0.8)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(255, 128, 0, 1)',
+                        'rgba(51, 255, 51, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                },
+            
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return tooltipItem.yLabel;
+                        }
+                    }
+                }
+            }        
+        });     
+
+        var ctx = document.getElementById("myChart6");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["0", "2", "4"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [521, 638, 227],
                     backgroundColor: [
                         'rgba(255, 0, 0, 0.8)',
                         'rgba(255, 128, 0, 0.8)',

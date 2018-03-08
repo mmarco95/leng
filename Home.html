@@ -31,13 +31,26 @@
                 color:red;
             }
 
-            .navbar{
-                background-color: orange;
+            .navbar-brand{
+                background-color: rgb(255, 165, 0);
+                width:100%;
+            }
+
+            .navbar-item{
+                width:10%;
+            }
+
+            #testo{                
+                width:90%;
+                color:white;
+                font-weight: bold;
+                
             }
            
             .footer{
                 height:10%;
                 background-color: white;
+                font-weight: bold;
             }
 
             .tile{
@@ -46,10 +59,18 @@
 
             }  
 
-
             .container{
                 height:80%;
                 width:100%;
+            }
+            
+            h1{
+                margin: 0;
+                padding:0;
+            }
+
+            .title{
+                font-size: 30px;
             }
     </style>
 
@@ -57,11 +78,16 @@
         <div id="corpo">
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="http://www.iprase.tn.it/">
-                        <img src="http://www.iprase.tn.it/wp-content/uploads/2013/09/logo2016-trasparente.png" width="112" height="30"> ciaoooooooooooo
-                    </a>
+                    <div class="navbar-item">
+                        <img src="http://www.iprase.tn.it/wp-content/uploads/2013/09/logo2016-trasparente.png" width="112" height="30">
+                    </div>
+                    <div class="navbar-item content has-text-centered" id="testo">
+                        TRENTINO LANGUAGE TESTING
+                    </div>
+                    
                 </div>
             </nav>
+        
 
         <div class="container">
             <div class="tile is-ancestor">
@@ -69,10 +95,10 @@
                     <article class="tile is-child box">
                         <p class="title">Lingua</p>
                         <label class="checkbox">
-                            <input type="checkbox" name="2016">
+                            <input type="checkbox" name="ted">
                             Tedesco
                             <br>
-                            <input type="checkbox" name="2018">
+                            <input type="checkbox" name="ing">
                             Inglese
                         </label>
                     </article>
@@ -80,11 +106,11 @@
 
                 <div class="tile is-parent">
                     <article class="tile is-child box">
-                    <p class="title">Anno</p>
-                        <label class="checkbox">
+                    <p class="title">Anno</p>                       
                             <input type="checkbox" name="2016">
                             2016
                             <br>
+                        <label class="checkbox" disabled>
                             <input type="checkbox"  disabled name="2018">
                             2018
                         </label>
@@ -133,17 +159,17 @@
                     <article class="tile is-child box">
                         <p class="title">Tipo domanda</p>
                         <label class="checkbox" disabled>
-                            <input type="checkbox" disabled name="A1">
-                            P1
-                            <br>
-                            <input type="checkbox" disabled name="A2">
-                            P2
+                        <input type="checkbox" disabled name="P1">
+                        P1
+                        <br>
+                        <input type="checkbox" disabled name="P2">
+                        P2
                         </label>
                         <br>
-                        <input type="checkbox" name="B1">
+                        <input type="checkbox" name="S1">
                         S1
                         <br>
-                        <input type="checkbox" name="B1">
+                        <input type="checkbox" name="S2">
                         S2
                     </article>
                 </div>
@@ -174,21 +200,28 @@
                     </article>
                     </div>
                 </div>      
-    
-            <div class="footer">           
+
+            <div class="footer">
                 <div class="content has-text-centered">
-                    <a class="button is-rounded" id="confronta" onclick="">Confronta</a>
-                    <a class="button is-rounded" id="confronta">Visualizza</a>
+                    <a class="button is-rounded" id="confronta">Confronta</a>
+                    <a class="button is-rounded" id="confronta" onclick="a2(A2)">Visualizza</a>
                 </div>
             </div>
         </div>   
         </div>
     </body>
-  
-</html>
 
-<script>
-    function parametro(valore){
-        alert();
-    }
-</script>
+    <script>
+        function a2(as){
+            alert("asd")
+            alert("Ciaoaoao"+as);
+            //var ckName = document.getElementsByName(as.name);
+            /*if(as=="A2")
+                window.open("TedescoA2S2.html");
+            else{
+                window.open("chart.html");
+                
+            }*/               
+        }
+    </script>
+</html>
