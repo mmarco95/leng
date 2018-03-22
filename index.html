@@ -1,0 +1,354 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IPRASE</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:bold' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:medium' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="bulma.css">
+
+</head>
+<script src="https://cdnjs.com/libraries/Chart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+    body {
+        margin: 0px;
+        border: 0px;
+        font-family: Montserrat;
+    }
+
+    #corpo {
+        width: 100%;
+        height: 100%;
+        font-weight: bold;
+
+    }
+
+
+    #confronta {
+        margin-right: 20px;
+        background-color: orange;
+        border-color: black;
+        color: white;
+        height: 80px;
+        width: 200px;
+
+    }
+
+    #confronta:hover {
+        background-color: white;
+        color: orange;
+    }
+
+    .navbar-brand {
+        background-color: orange;
+        width: 100%;
+    }
+
+    .navbar-item {
+        width: 10%;
+    }
+
+    #testo {
+        width: 90%;
+        color: white;
+        font-weight: bold;
+
+    }
+
+    .footer {
+        height: 10%;
+        background-color: white;
+        font-weight: bold;
+        float: bottom;
+    }
+
+    .tile {
+        margin-top: 10px;
+        height: 40%;
+
+
+    }
+
+    .container {
+        height: 80%;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <div id="corpo">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <img src="logo.png" width="112" height="30">
+
+                </div>
+                <div class="navbar-item content has-text-centered" id="testo">
+                    TRENTINO LANGUAGE TESTING
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Lingua</p>
+                        <input type="checkbox" name="ted" id="ted" checked>
+                        <label for="ted">
+                            Tedesco
+                        </label>
+                        <br>
+                        <input type="checkbox" name="ing" id="ing">
+                        <label for="ing">
+                            Inglese
+                        </label>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Anno</p>
+                        <input type="checkbox" name="2016" checked> 2016
+                        <br>
+                        <label class="checkbox" disabled>
+                            <input type="checkbox" disabled name="2018"> 2018
+                        </label>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Livello</p>
+                        <input type="checkbox" name="A1" id="A1" checked> A1
+                        <br>
+                        <input type="checkbox" name="A2" id="A2" checked> A2
+                        <br>
+                        <input type="checkbox" name="B1" id="B1" checked> B1
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Prova</p>
+                        <label class="checkbox" disabled>
+                            <input type="checkbox" disabled name="let"> Lettura
+                        </label>
+                        <br>
+                        <input type="checkbox" name="scr"> Scrittura
+                        <br>
+                        <label class="checkbox" disabled>
+                            <input type="checkbox" disabled name="par"> Parlato
+                            <br>
+                            <input type="checkbox" disabled name="asc"> Ascolto
+                            <br>
+                            <input type="checkbox" disabled name="com"> Competenze formali
+                        </label>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Tipo domanda</p>
+                        <label class="checkbox" disabled>
+                            <input type="checkbox"> P1
+                            <br>
+                            <input type="checkbox"> P2
+                        </label>
+                        <br>
+                        <input type="checkbox" name="S1" id="S1" checked> S1
+                        <br>
+                        <input type="checkbox" name="S2" id="S2" checked class="group1 zioporci"> S2
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Indicatore</p>
+                        <input type="checkbox" name="let" value="lessico" id="LESSICO" checked> Lessico
+                        <br>
+                        <input type="checkbox" name="scr" id="CORRETTEZZA" checked> Correttezza competenze formali
+                        <br>
+                        <input type="checkbox" name="par" id="ADEMPIMENTO"> Adempimento alla consegna
+                        <br>
+                        <input type="checkbox" name="asc" id="COERENZA" class="group1 zioporci"> Coerenza e coesione
+                        <br>
+                        <input type="checkbox" name="com" id="CAPACITA" class="group1 zioporci"> Capacità comunicative e descrittive
+                        <br>
+                        <input type="checkbox" name="com" id="OPINIONI" class="group1 zioporci"> Capacità esprimere proprie opinioni
+                        <br>
+                        <input type="checkbox" name="com" id="SENTIMENTI" class="group1 zioporci"> Capacità esprimere i propri sentimenti
+
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div id="graphs">
+
+        </div>
+        <div class="footer">
+            <div class="content has-text-centered">
+                <a class="button is-rounded" id="confronta">Confronta</a>
+                <a class="button is-rounded" id="confronta" onclick="visualizza()">Visualizza</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="chart.js"></script>
+<script>
+
+
+
+    let dati = [];
+
+
+    fetch('provascrit.json')
+        .then(resp => resp.json())
+        .then(d => {
+            dati = d;
+        })
+
+
+
+
+    function visualizza() {
+        let divGrafici = document.getElementById("graphs");
+        divGrafici.innerHTML = '';
+
+        let lingua = $("#ted").is(":checked") ? "DE" : "ENG"
+        console.log(lingua)
+        let anno = $("#ted").is(":checked") ? "tedesco" : "inglese"
+
+        filteredData = dati.filter(d => d.LEN == lingua)
+
+
+
+        console.log("dati filtrati per anno: ", filteredData)
+
+        let levels = [];
+
+        ["A1", "A2", "B1"].map((level) => {
+            if ($(`#${level}`).is(":checked"))
+                levels.push(level)
+        });
+
+        console.log(levels)
+
+        filteredData = filteredData.filter(d => levels.includes(d.LIVELLO))
+
+        console.log("dati filtrati per livello: ", filteredData)
+
+
+
+        let types = [];
+
+        ["S1", "S2"].map((type) => {
+            if ($(`#${type}`).is(":checked"))
+                types.push(type)
+        });
+
+        console.log(types)
+
+        filteredData = filteredData.filter(d => types.includes(d.DOMANDA))
+
+        console.log("dati filtrati per tipo di domanda: ", filteredData)
+        console.log("--------------------------------")
+
+        let inds = [];
+
+        ["LESSICO", "CORRETTEZZA", "ADEMPIMENTO", "COERENZA", "CAPACITA", "OPINIONI", "SENTIMENTI"].map((ind) => {
+            if ($(`#${ind}`).is(":checked"))
+                inds.push(ind)
+        });
+
+        console.log(inds)
+
+        filteredData = filteredData.filter(d => inds.includes(d.INDICATORE))
+
+        console.log("dati filtrati per indicatore: ", filteredData)
+
+
+        filteredData.map(row => {
+            let ctx = document.createElement("canvas")
+            divGrafici.appendChild(ctx)
+
+            createGraph(ctx, row.LABEL, row.DATA);
+        })
+
+        console.log("--------------------------------")
+
+
+
+    }
+
+    function createGraph(ctx, labels, data) {
+        //var ctx = document.getElementById("graphs");
+
+        //var ctx = document.createElement("canvas");
+
+        let campo = "frequency"
+
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: '# of Votes',
+                    data: data,
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 0.8)',
+                        'rgba(255, 128, 0, 0.8)',
+                        'rgba(51, 255, 51, 0.8)',
+
+                    ],
+                    borderColor: [
+                        'rgba(255, 0, 0, 1)',
+                        'rgba(255, 128, 0, 1)',
+                        'rgba(51, 255, 51, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                },
+
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    callbacks: {
+                        label: function (tooltipItem) {
+                            return tooltipItem.yLabel;
+                        }
+                    }
+                }
+            }
+
+        });
+
+        myChart.canvas.parentNode.style.height = '300px';
+        myChart.canvas.parentNode.style.width = '300px';
+        return ctx;
+    }
+</script>
+
+</html>

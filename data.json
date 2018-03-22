@@ -1,3 +1,14 @@
-[{"livello":0,"frequency":395},
-{"livello":2,"frequency":409},
-{"livello":4,"frequency":230}]
+[
+    {
+        "livello": 0,
+        "frequency": 557
+    },
+    {
+        "livello": 2,
+        "frequency": 366
+    },
+    {
+        "livello": 4,
+        "frequency": 92
+    }
+]

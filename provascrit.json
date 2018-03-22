@@ -1,0 +1,830 @@
+[
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "LESSICO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            557,
+            366,
+            92
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CORRETTEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            621,
+            339,
+            55
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "ADEMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            529,
+            369,
+            117
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "COERENZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            489,
+            665,
+            242
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CORRETTEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            532,
+            770,
+            94
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "ADEMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            267,
+            670,
+            459
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CAPACITA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            592,
+            592,
+            212
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "LESSICO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            522,
+            651,
+            213
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "CORRETEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            508,
+            793,
+            85
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "ADEMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            215,
+            677,
+            494
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "CAPACITA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            605,
+            521,
+            260
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "OPINIONI",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            730,
+            450,
+            206
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "COERENZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            521,
+            638,
+            227
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "ADEMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            34,
+            169,
+            136
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CORRETTEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            78,
+            223,
+            38
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "COERENZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            76,
+            151,
+            112
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CAPACITA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            106,
+            121,
+            112
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "ADEMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            75,
+            151,
+            117
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "CORRETTEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            158,
+            172,
+            13
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "LESSICO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            150,
+            128,
+            65
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "COERENZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            145,
+            116,
+            82
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "CAPACITA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            184,
+            78,
+            81
+        ]
+    },
+    {
+        "LEN": "DE",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "SENTIMENTI",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            206,
+            62,
+            75
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "LESSICO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            395,
+            409,
+            230
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CORRETTEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            397,
+            419,
+            218
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "ADEMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            271,
+            466,
+            297
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "COERENZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            340,
+            741,
+            359
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CORRETTEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            348,
+            763,
+            329
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "AENGMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            247,
+            480,
+            713
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CAPACITA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            318,
+            683,
+            439
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "LESSICO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            363,
+            623,
+            447
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "CORRETEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            313,
+            756,
+            364
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "ADEMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            161,
+            448,
+            824
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "CAPACITA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            331,
+            571,
+            531
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "OPINIONI",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            326,
+            599,
+            508
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "A2",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "COERENZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            331,
+            737,
+            365
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "ADEMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            48,
+            145,
+            291
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CORRETTEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            85,
+            179,
+            220
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "COERENZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            64,
+            173,
+            247
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S1",
+        "INDICATORE": "CAPACITA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            79,
+            161,
+            244
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "ADEMPIMENTO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            91,
+            153,
+            234
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "CORRETTEZZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            118,
+            213,
+            147
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "LESSICO",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            116,
+            218,
+            144
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "COERENZA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            107,
+            206,
+            165
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "CAPACITA",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            127,
+            187,
+            164
+        ]
+    },
+    {
+        "LEN": "ENG",
+        "ANNO": 2016,
+        "LIVELLO": "B1",
+        "PROVA": "SCRITTO",
+        "DOMANDA": "S2",
+        "INDICATORE": "SENTIMENTI",
+        "LABEL": [
+            0,
+            2,
+            4
+        ],
+        "DATA": [
+            134,
+            178,
+            166
+        ]
+    }
+]
