@@ -1,0 +1,508 @@
+<html>
+<script type="text/javascript" src="chart.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="bulma.css">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #corpo {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .container {
+            height: 80%;
+            width: 100%;
+        }
+
+        .navbar {
+            background-color: orange;
+        }
+
+        #titolo {
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--<div id="cane">
+            <canvas id="myChart" width="100" height="100"></canvas>
+        </div>-->
+
+    <!--<div id="gatto">
+            <canvas id="myChart2" width="100" height="100"></canvas>
+        </div>-->
+    <div id="corpo">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="http://www.iprase.tn.it/">
+                    <img src="logo2016-trasparente.png" width="112" height="30">
+                </a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <p align="center" id="titolo">TEDESCO A2</p>
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Lessico</p>
+                        <br>
+                        <canvas id="myChart"></canvas>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Correttezza competenze formali</p>
+                        <br>
+                        <canvas id="myChart2"></canvas>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Adempimento alla consegna</p>
+                        <br>
+                        <canvas id="myChart3"></canvas>
+                    </article>
+                </div>
+            </div>
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Capacit&agrave; descrittive</p>
+                        <br>
+                        <canvas id="myChart4"></canvas>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Capacit&agrave; esprimere proprie opinioni</p>
+                        <br>
+                        <canvas id="myChart5"></canvas>
+                    </article>
+                </div>
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Coerenza e coesione</p>
+                        <br>
+                        <canvas id="myChart6"></canvas>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    /*$.getJSON( "persone.json", function() {
+        console.log( "success" );
+    })
+
+var jsonfile = {
+    "jsonarray": [{"livello":0,"frequency":395},
+    {"livello":2,"frequency":409},
+    {"livello":4,"frequency":230}]
+    };
+
+    var labels = jsonfile.jsonarray.map(function(e) {
+return e.livello;
+});
+var data = jsonfile.jsonarray.map(function(e) {
+return e.frequency;
+});;*/
+
+    /*function readTextFile(file, callback) {
+        var rawFile = new XMLHttpRequest();
+        rawFile.overrideMimeType("data.json");
+        rawFile.open("GET", file, true);
+        rawFile.onreadystatechange = function() {
+            if (rawFile.readyState === 4 && rawFile.status == "200") {
+                callback(rawFile.responseText);
+            }
+        }
+        rawFile.send(null);
+    }
+
+    //usage:
+    readTextFile("data.json", function(text){
+        var data = JSON.parse(text);
+        console.log(data);
+        //document.write(data);
+    });*/
+
+    /*var jsonfile = {
+    "jsonarray": [{
+        "name": "Joe",
+        "age": 12
+    }, {
+        "name": "Tom",
+        "age": 14
+    }]
+    };
+    var jqxhr = $.getJSON( "prova.json", function() {
+    console.log( "success" );
+    })
+    .done(function() {
+        console.log( "second success" );
+    })
+    .fail(function() {
+        console.log( "error" );
+    })
+    .always(function() {
+        console.log( "complete" );
+});
+
+var jsonStr = JSON.stringify(jqxhr);
+document.body.innerHTML = jsonStr;
+ 
+var jsonfile = $.getJSON( "persone.json", function() {
+    console.log( "success" );
+})
+
+var labels = jsonefile.persone.map(function(e) {
+return e.name;
+});
+var data = jsonefile.persone.map(function(e) {
+return e.age;
+});;*/
+
+    /*var jsonfile = {
+    "prova": [{
+        "name": "Joe",
+        "age": 12
+    }, {
+        "name": "Tom",
+        "age": 14
+    }]
+    };
+
+    var labels = jsonfile.prova.map(function(e) {
+    return e.name;
+    });
+    var data = jsonfile.prova.map(function(e) {
+    return e.age;
+    });;*/
+
+    /*var jsonStr = JSON.stringify(data);
+    document.body.innerHTML = jsonStr;
+                                     
+
+    var labels = [], data=[];
+      results["packets"].forEach(function(packet) {
+        labels.push(new Date(packet.timestamp).formatMMDDYYYY());
+        data.push(parseFloat(packet.payloadString));
+      });*/
+
+    //var str = JSON.stringify(data, null, 2)
+    //document.write(data);
+
+
+
+    /*$.ajax({
+        url: 'prova.json',
+        dataType:'json',
+        type: 'get',
+        cache: false,
+        success: function(data) {
+            $(data.prova).each(function(index, value){
+            console.log(value.livello);                      
+            });
+        
+        }          
+    }); */
+
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["0", "2", "4"],
+            datasets: [{
+                label: '# of Votes',
+                data: [522, 651, 213],
+                backgroundColor: [
+                    'rgba(255, 0, 0, 0.8)',
+                    'rgba(255, 128, 0, 0.8)',
+                    'rgba(51, 255, 51, 0.8)',
+
+                ],
+                borderColor: [
+                    'rgba(255, 0, 0, 1)',
+                    'rgba(255, 128, 0, 1)',
+                    'rgba(51, 255, 51, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem) {
+                        return tooltipItem.yLabel;
+                    }
+                }
+            }
+        }
+    });
+
+    var ctx = document.getElementById("myChart2");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["0", "2", "4"],
+            datasets: [{
+                label: '# of Votes',
+                data: [508, 793, 85],
+                backgroundColor: [
+                    'rgba(255, 0, 0, 0.8)',
+                    'rgba(255, 128, 0, 0.8)',
+                    'rgba(51, 255, 51, 0.8)',
+
+                ],
+                borderColor: [
+                    'rgba(255, 0, 0, 1)',
+                    'rgba(255, 128, 0, 1)',
+                    'rgba(51, 255, 51, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem) {
+                        return tooltipItem.yLabel;
+                    }
+                }
+            }
+        }
+    });
+
+    var ctx = document.getElementById("myChart3");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["0", "2", "4"],
+            datasets: [{
+                label: '# of Votes',
+                data: [215, 677, 494],
+                backgroundColor: [
+                    'rgba(255, 0, 0, 0.8)',
+                    'rgba(255, 128, 0, 0.8)',
+                    'rgba(51, 255, 51, 0.8)',
+
+                ],
+                borderColor: [
+                    'rgba(255, 0, 0, 1)',
+                    'rgba(255, 128, 0, 1)',
+                    'rgba(51, 255, 51, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem) {
+                        return tooltipItem.yLabel;
+                    }
+                }
+            }
+        }
+    });
+
+
+
+
+
+    var ctx = document.getElementById("myChart4");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["0", "2", "4"],
+            datasets: [{
+                label: '# of Votes',
+                data: [605, 521, 260],
+                backgroundColor: [
+                    'rgba(255, 0, 0, 0.8)',
+                    'rgba(255, 128, 0, 0.8)',
+                    'rgba(51, 255, 51, 0.8)',
+
+                ],
+                borderColor: [
+                    'rgba(255, 0, 0, 1)',
+                    'rgba(255, 128, 0, 1)',
+                    'rgba(51, 255, 51, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem) {
+                        return tooltipItem.yLabel;
+                    }
+                }
+            }
+        }
+    });
+
+    var ctx = document.getElementById("myChart5");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["0", "2", "4"],
+            datasets: [{
+                label: '# of Votes',
+                data: [730, 450, 206],
+                backgroundColor: [
+                    'rgba(255, 0, 0, 0.8)',
+                    'rgba(255, 128, 0, 0.8)',
+                    'rgba(51, 255, 51, 0.8)',
+
+                ],
+                borderColor: [
+                    'rgba(255, 0, 0, 1)',
+                    'rgba(255, 128, 0, 1)',
+                    'rgba(51, 255, 51, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem) {
+                        return tooltipItem.yLabel;
+                    }
+                }
+            }
+        }
+    });
+
+    var ctx = document.getElementById("myChart6");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["0", "2", "4"],
+            datasets: [{
+                label: '# of Votes',
+                data: [521, 638, 227],
+                backgroundColor: [
+                    'rgba(255, 0, 0, 0.8)',
+                    'rgba(255, 128, 0, 0.8)',
+                    'rgba(51, 255, 51, 0.8)',
+
+                ],
+                borderColor: [
+                    'rgba(255, 0, 0, 1)',
+                    'rgba(255, 128, 0, 1)',
+                    'rgba(51, 255, 51, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+
+            legend: {
+                display: false
+            },
+            tooltips: {
+                callbacks: {
+                    label: function (tooltipItem) {
+                        return tooltipItem.yLabel;
+                    }
+                }
+            }
+        }
+    });
+</script>
+
+</html>
