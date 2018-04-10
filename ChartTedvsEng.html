@@ -1,21 +1,21 @@
 <html>
 
-        <script type="text/javascript" src="chart.js"></script>
+<script type="text/javascript" src="chart.js"></script>
 
 
 
-        <style>
-            #chart{
-                height: 800px;
-                width:800px;
-            }
-        
-        </style>
-    <body>
-        <div id="chart">
-        <canvas id="mychart" width="800" height="450"></canvas>
-    </div>
-    </body>
+<style>
+  #chart {
+    height: 800px;
+    width: 800px;
+  }
+</style>
+
+<body>
+  <div id="chart">
+    <canvas id="mychart" width="800" height="450"></canvas>
+  </div>
+</body>
 
 
 </html>
@@ -23,8 +23,8 @@
 
 <script>
 
-    
-new Chart(document.getElementById("mychart"), {
+
+  new Chart(document.getElementById("mychart"), {
     type: 'bar',
     data: {
       labels: ["0", "1", "2"],
@@ -32,11 +32,11 @@ new Chart(document.getElementById("mychart"), {
         {
           label: "Tedesco",
           backgroundColor: "#3e95cd",
-          data: [133,221,783,2478]
+          data: [800, 221, 783, 2478]
         }, {
           label: "Inglese",
           backgroundColor: "#8e5ea2",
-          data: [408,547,675,734]
+          data: [10, 547, 675, 734]
         }
       ]
     },
@@ -46,6 +46,6 @@ new Chart(document.getElementById("mychart"), {
         text: 'Lessico confronto'
       }
     }
-});
+  });
 
 </script>
