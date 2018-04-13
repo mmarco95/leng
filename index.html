@@ -7,84 +7,11 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:medium' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="bulma.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
 
 </head>
 <script src="https://cdnjs.com/libraries/Chart.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<style>
-    body {
-        margin: 0px;
-        border: 0px;
-        font-family: Montserrat;
-    }
-
-    #corpo {
-        width: 100%;
-        height: 100%;
-        font-weight: bold;
-
-    }
-
-
-    #confronta {
-        margin-right: 20px;
-        background-color: orange;
-        border-color: black;
-        color: white;
-        height: 80px;
-        width: 200px;
-
-    }
-
-    #confronta:hover {
-        background-color: white;
-        color: orange;
-    }
-
-    .navbar-brand {
-        background-color: orange;
-        width: 100%;
-    }
-
-    .navbar-item {
-        width: 10%;
-    }
-
-    #testo {
-        width: 90%;
-        color: white;
-        font-weight: bold;
-
-    }
-
-    .footer {
-        height: 10%;
-        background-color: white;
-        font-weight: bold;
-        float: bottom;
-    }
-
-    .tile {
-        margin-top: 10px;
-        height: 40%;
-
-
-    }
-
-    .container {
-        height: 80%;
-        width: 100%;
-    }
-
-    h1 {
-        margin: 0;
-        padding: 0;
-    }
-
-    .title {
-        font-size: 30px;
-    }
-</style>
 
 <body>
     <div id="corpo">
@@ -195,14 +122,16 @@
                 </div>
             </div>
         </div>
-        <div id="graphs">
 
-        </div>
         <div class="footer">
             <div class="content has-text-centered">
                 <a class="button is-rounded" id="confronta">Confronta</a>
                 <a class="button is-rounded" id="confronta" onclick="visualizza()">Visualizza</a>
             </div>
+        </div>
+
+        <div id="graphs">
+
         </div>
     </div>
 </body>
@@ -282,7 +211,12 @@
 
 
         filteredData.map(row => {
+            console.log("row", row)
             let ctx = document.createElement("canvas")
+            let title = document.createElement("h1")
+            title.className = "titoletto"
+            title.textContent = `${row.LEN} - ${row.LIVELLO} - ${row.DOMANDA} - ${row.INDICATORE}`;
+            divGrafici.appendChild(title)
             divGrafici.appendChild(ctx)
 
             createGraph(ctx, row.LABEL, row.DATA);

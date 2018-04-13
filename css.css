@@ -1,0 +1,72 @@
+body {
+  margin: 0px;
+  border: 0px;
+  font-family: Montserrat;
+}
+
+#corpo {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+}
+
+#confronta {
+  margin-right: 20px;
+  background-color: orange;
+  border-color: black;
+  color: white;
+  height: 80px;
+  width: 200px;
+}
+
+#confronta:hover {
+  background-color: white;
+  color: orange;
+}
+
+.navbar-brand {
+  background-color: orange;
+  width: 100%;
+}
+
+.navbar-item {
+  width: 10%;
+}
+
+#testo {
+  width: 90%;
+  color: white;
+  font-weight: bold;
+}
+
+.footer {
+  height: 10%;
+  background-color: white;
+  font-weight: bold;
+  /* float: bottom; */
+}
+
+.tile {
+  margin-top: 10px;
+  height: 40%;
+}
+
+.container {
+  height: 80%;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.titoletto {
+  color: #123456;
+  font-size: 50px;
+  font-weight: bold;
+}
