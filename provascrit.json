@@ -4,9 +4,9 @@
     "ANNO": 2016,
     "LIVELLO": "A1",
     "PROVA": "SCRITTO",
-    "DOMANDA": "S1",
+    "DOMANDA": "S2",
     "INDICATORE": "LESSICO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [557, 366, 92]
   },
   {
@@ -14,9 +14,9 @@
     "ANNO": 2016,
     "LIVELLO": "A1",
     "PROVA": "SCRITTO",
-    "DOMANDA": "S1",
+    "DOMANDA": "S2",
     "INDICATORE": "CORRETTEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [621, 339, 55]
   },
   {
@@ -24,9 +24,9 @@
     "ANNO": 2016,
     "LIVELLO": "A1",
     "PROVA": "SCRITTO",
-    "DOMANDA": "S1",
+    "DOMANDA": "S2",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [529, 369, 117]
   },
   {
@@ -36,7 +36,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "COERENZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [489, 665, 242]
   },
   {
@@ -46,7 +46,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "CORRETTEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [532, 770, 94]
   },
   {
@@ -56,7 +56,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [267, 670, 459]
   },
   {
@@ -66,7 +66,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "CAPACITA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [592, 592, 212]
   },
   {
@@ -76,7 +76,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "LESSICO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [522, 651, 213]
   },
   {
@@ -86,7 +86,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "CORRETEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [508, 793, 85]
   },
   {
@@ -96,7 +96,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [215, 677, 494]
   },
   {
@@ -106,7 +106,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "CAPACITA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [605, 521, 260]
   },
   {
@@ -116,7 +116,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "OPINIONI",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [730, 450, 206]
   },
   {
@@ -126,7 +126,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "COERENZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [521, 638, 227]
   },
   {
@@ -136,7 +136,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [34, 169, 136]
   },
   {
@@ -146,7 +146,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "CORRETTEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [78, 223, 38]
   },
   {
@@ -156,7 +156,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "COERENZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [76, 151, 112]
   },
   {
@@ -166,7 +166,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "CAPACITA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [106, 121, 112]
   },
   {
@@ -176,7 +176,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [75, 151, 117]
   },
   {
@@ -186,7 +186,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "CORRETTEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [158, 172, 13]
   },
   {
@@ -196,7 +196,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "LESSICO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [150, 128, 65]
   },
   {
@@ -206,7 +206,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "COERENZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [145, 116, 82]
   },
   {
@@ -216,7 +216,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "CAPACITA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [184, 78, 81]
   },
   {
@@ -226,7 +226,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "SENTIMENTI",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [206, 62, 75]
   },
   {
@@ -234,9 +234,9 @@
     "ANNO": 2016,
     "LIVELLO": "A1",
     "PROVA": "SCRITTO",
-    "DOMANDA": "S1",
+    "DOMANDA": "S2",
     "INDICATORE": "LESSICO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [395, 409, 230]
   },
   {
@@ -244,9 +244,9 @@
     "ANNO": 2016,
     "LIVELLO": "A1",
     "PROVA": "SCRITTO",
-    "DOMANDA": "S1",
+    "DOMANDA": "S2",
     "INDICATORE": "CORRETTEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [397, 419, 218]
   },
   {
@@ -254,9 +254,9 @@
     "ANNO": 2016,
     "LIVELLO": "A1",
     "PROVA": "SCRITTO",
-    "DOMANDA": "S1",
+    "DOMANDA": "S2",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [271, 466, 297]
   },
   {
@@ -266,7 +266,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "COERENZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [340, 741, 359]
   },
   {
@@ -276,7 +276,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "CORRETTEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [348, 763, 329]
   },
   {
@@ -286,7 +286,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [247, 480, 713]
   },
   {
@@ -296,7 +296,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "CAPACITA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [318, 683, 439]
   },
   {
@@ -306,7 +306,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "LESSICO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [363, 623, 447]
   },
   {
@@ -316,7 +316,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "CORRETEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [313, 756, 364]
   },
   {
@@ -326,7 +326,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [161, 448, 824]
   },
   {
@@ -336,7 +336,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "CAPACITA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [331, 571, 531]
   },
   {
@@ -346,7 +346,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "OPINIONI",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [326, 599, 508]
   },
   {
@@ -356,7 +356,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "COERENZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [331, 737, 365]
   },
   {
@@ -366,7 +366,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [48, 145, 291]
   },
   {
@@ -376,7 +376,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "CORRETTEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [85, 179, 220]
   },
   {
@@ -386,7 +386,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "COERENZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [64, 173, 247]
   },
   {
@@ -396,7 +396,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S1",
     "INDICATORE": "CAPACITA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [79, 161, 244]
   },
   {
@@ -406,7 +406,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "ADEMPIMENTO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [91, 153, 234]
   },
   {
@@ -416,7 +416,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "CORRETTEZZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [118, 213, 147]
   },
   {
@@ -426,7 +426,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "LESSICO",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [116, 218, 144]
   },
   {
@@ -436,7 +436,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "COERENZA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [107, 206, 165]
   },
   {
@@ -446,7 +446,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "CAPACITA",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [127, 187, 164]
   },
   {
@@ -456,7 +456,7 @@
     "PROVA": "SCRITTO",
     "DOMANDA": "S2",
     "INDICATORE": "SENTIMENTI",
-    "LABEL": [0, 2, 4],
+    "LABEL": [0, 1, 2],
     "DATA": [134, 178, 166]
   },
 

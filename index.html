@@ -25,7 +25,6 @@
 
             </div>
         </nav>
-
         <div class="container">
             <div class="tile is-ancestor">
                 <div class="tile is-parent">
@@ -61,11 +60,11 @@
                 <div class="tile is-parent">
                     <article class="tile is-child box">
                         <p class="title">Livello</p>
-                        <input type="checkbox" name="A1" id="A1" checked> A1
+                        <input type="radio" name="livello" id="A1" onchange="modificaDomanda()"> A1
                         <br>
-                        <input type="checkbox" name="A2" id="A2" checked> A2
+                        <input type="radio" name="livello" id="A2" onchange="modificaDomanda()"> A2
                         <br>
-                        <input type="checkbox" name="B1" id="B1" checked> B1
+                        <input type="radio" name="livello" id="B1" onchange="modificaDomanda()"> B1
                     </article>
                 </div>
 
@@ -124,10 +123,9 @@
                 </div>
             </div>
         </div>
-
         <div class="footer">
             <div class="content has-text-centered">
-                <a class="button is-rounded" id="confronta">Confronta</a>
+                <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a>
                 <a class="button is-rounded" id="confronta" onclick="visualizza()">Visualizza</a>
             </div>
         </div>
@@ -216,17 +214,141 @@
             let title = document.createElement("h1")
             title.className = "titoletto"
             title.textContent = `${row.ANNO} - ${row.LEN} - ${row.LIVELLO} - ${row.DOMANDA} - ${row.INDICATORE}`;
-            divGrafici.appendChild(title)
-            divGrafici.appendChild(ctx)
+            let container = document.createElement("div")
+
+            container.appendChild(title)
+            container.appendChild(ctx)
+            container.className = "grafico"
+
+            divGrafici.appendChild(container)
 
             createGraph(ctx, row.LABEL, row.DATA);
         })
 
         console.log("--------------------------------")
 
+    }
 
+
+    function confronta() {
+        let divGrafici = document.getElementById("graphs");
+        divGrafici.innerHTML = '';
+
+        let lingua = $("#ted").is(":checked") ? "DE" : "ENG"
+        //console.log(lingua)
+        // let anno = $("#ted").is(":checked") ? "tedesco" : "inglese"
+
+        filteredData = dati.filter(d => d.LEN == lingua)
+
+
+
+        //console.log("dati filtrati per anno: ", filteredData)
+
+        let levels = [];
+
+        ["A1", "A2", "B1"].map((level) => {
+            if ($(`#${level}`).is(":checked"))
+                levels.push(level)
+        });
+
+        //console.log(levels)
+
+        filteredData = filteredData.filter(d => levels.includes(d.LIVELLO))
+
+        //console.log("dati filtrati per livello: ", filteredData)
+
+
+
+        let types = [];
+
+        ["S1", "S2"].map((type) => {
+            if ($(`#${type}`).is(":checked"))
+                types.push(type)
+        });
+
+        //console.log(types)
+
+        filteredData = filteredData.filter(d => types.includes(d.DOMANDA))
+
+        //console.log("dati filtrati per tipo di domanda: ", filteredData)
+        //console.log("--------------------------------")
+
+        let inds = [];
+
+        ["LESSICO", "CORRETTEZZA", "ADEMPIMENTO", "COERENZA", "CAPACITA", "OPINIONI", "SENTIMENTI"].map((ind) => {
+            if ($(`#${ind}`).is(":checked"))
+                inds.push(ind)
+        });
+
+        // console.log(inds)
+
+        filteredData = filteredData.filter(d => inds.includes(d.INDICATORE))
+
+        console.log("dati filtrati per indicatore: ")
+        filteredData.map(data => console.log(data))
+
+
+        let comparati = [];
+        while (filteredData.length > 0) {
+            let first = filteredData.shift()
+            console.log(">-----------")
+            console.log("first", first)
+
+            let i = 0;
+            while (i < filteredData.length &&
+                (
+                    filteredData[i].DOMANDA != first.DOMANDA ||
+                    filteredData[i].LIVELLO != first.LIVELLO ||
+                    filteredData[i].PROVA != first.PROVA ||
+                    filteredData[i].INDICATORE != first.INDICATORE
+                )
+            ) {
+                i++
+            }
+
+            let second = filteredData[i];
+            filteredData.splice(i, 1);
+            console.log("trovato altro dato: ", second)
+
+
+            if (second) {
+
+                comparati.push({
+                    LABEL: first.LABEL,
+                    data1: first.DATA,
+                    data2: second.DATA,
+                    LEN: first.LEN,
+                    LIVELLO: first.LIVELLO,
+                    DOMANDA: first.DOMANDA,
+                    INDICATORE: first.INDICATORE
+                })
+
+            }
+        }
+
+        comparati.map(row => {
+            console.log("row", row)
+            let ctx = document.createElement("canvas")
+            let title = document.createElement("h1")
+            title.className = "titoletto"
+            title.textContent = `${row.LEN} - ${row.LIVELLO} - ${row.DOMANDA} - ${row.INDICATORE}`;
+            let container = document.createElement("div")
+
+            container.appendChild(title)
+            container.appendChild(ctx)
+            container.className = "grafico"
+
+            divGrafici.appendChild(container)
+
+            createGraph2(ctx, row.LABEL, row.data1, row.data2);
+        })
+
+        console.log("--------------------------------")
 
     }
+
+
+
 
     function createGraph(ctx, labels, data) {
 
@@ -281,6 +403,71 @@
         myChart.canvas.parentNode.style.width = '900px';
         return ctx;
     }
+
+
+    function createGraph2(ctx, labels, data1, data2) {
+
+
+
+        var myChart2 = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["0", "1", "2"],
+                datasets: [
+                    {
+                        label: "2016",
+                        backgroundColor: "#66a3ff",
+                        data: data1
+                    }, {
+                        label: "2017",
+                        backgroundColor: "#ff9933",
+                        data: data2
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                },
+
+                legend: {
+                    display: true
+                },
+                tooltips: {
+                    callbacks: {
+                        label: function (tooltipItem) {
+                            return tooltipItem.yLabel;
+                        }
+                    }
+                }
+            }
+
+
+        });
+
+    }
+
+    //().ready(confronta)
+
+    function modificaDomanda() {
+        set("S1", !document.getElementById("A1").checked)
+    }
+
+    function set(id, abilitato) {
+        let element = document.getElementById(id)
+        if (abilitato) {
+            element.disabled = false;
+        }
+        else {
+            element.disabled = true;
+            element.checked = false;
+        }
+    }
+
 </script>
 
 </html>
