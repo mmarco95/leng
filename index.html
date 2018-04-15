@@ -30,12 +30,12 @@
                 <div class="tile is-parent">
                     <article class="tile is-child box">
                         <p class="title">Lingua</p>
-                        <input type="checkbox" name="ted" id="ted" checked>
+                        <input type="checkbox" name="ted" id="DE" checked>
                         <label for="ted">
                             Tedesco
                         </label>
                         <br>
-                        <input type="checkbox" name="ing" id="ing">
+                        <input type="checkbox" name="ing" id="ENG">
                         <label for="ing">
                             Inglese
                         </label>
@@ -45,12 +45,18 @@
                 <div class="tile is-parent">
                     <article class="tile is-child box">
                         <p class="title">Anno</p>
-                        <input type="checkbox" name="2016" checked> 2016
+                        <input type="checkbox" name="2016" id="2016" checked>
+                        <label for="2016">
+                            2016
+                        </label>
                         <br>
-                        <input type="checkbox" name="2016" checked> 2017
+                        <input type="checkbox" name="2017" id="2017">
+                        <label for="2017">
+                            2017 Tryout
+                        </label>
                         <br>
-                        <label class="checkbox" disabled>
-                            <input type="checkbox" disabled name="2018"> 2018
+                        <label for="2018" disabled></label>
+                        <input type="checkbox" disabled name="2018"> 2018
                         </label>
 
 
@@ -60,7 +66,7 @@
                 <div class="tile is-parent">
                     <article class="tile is-child box">
                         <p class="title">Livello</p>
-                        <input type="radio" name="livello" id="A1" onchange="modificaDomanda()"> A1
+                        <input type="radio" name="livello" id="A1" onchange="modificaDomanda()" checked> A1
                         <br>
                         <input type="radio" name="livello" id="A2" onchange="modificaDomanda()"> A2
                         <br>
@@ -75,7 +81,7 @@
                             <input type="checkbox" disabled name="let"> Lettura
                         </label>
                         <br>
-                        <input type="checkbox" name="scr"> Scrittura
+                        <input type="checkbox" name="scr" checked> Scrittura
                         <br>
                         <label class="checkbox" disabled>
                             <input type="checkbox" disabled name="par"> Parlato
@@ -96,18 +102,18 @@
                             <input type="checkbox"> P2
                         </label>
                         <br>
-                        <input type="checkbox" name="S1" id="S1" checked> S1
+                        <input type="checkbox" name="S1" id="S1"> S1
                         <br>
-                        <input type="checkbox" name="S2" id="S2" checked> S2
+                        <input type="checkbox" name="S2" id="S2" onchange="modificaIndicatore()" checked> S2
                     </article>
                 </div>
 
                 <div class="tile is-parent">
                     <article class="tile is-child box">
                         <p class="title">Indicatore</p>
-                        <input type="checkbox" name="let" value="lessico" id="LESSICO" checked> Lessico
+                        <input type="checkbox" name="let" id="LESSICO" checked> Lessico
                         <br>
-                        <input type="checkbox" name="scr" id="CORRETTEZZA" checked> Correttezza competenze formali
+                        <input type="checkbox" name="scr" id="CORRETTEZZA"> Correttezza competenze formali
                         <br>
                         <input type="checkbox" name="par" id="ADEMPIMENTO"> Adempimento alla consegna
                         <br>
@@ -155,15 +161,43 @@
         let divGrafici = document.getElementById("graphs");
         divGrafici.innerHTML = '';
 
-        let lingua = $("#ted").is(":checked") ? "DE" : "ENG"
-        console.log(lingua)
-        let anno = $("#ted").is(":checked") ? "tedesco" : "inglese"
+        // let lingua = $("#ted").is(":checked") ? "DE" : "ENG"
+        // console.log(lingua)
+        // let anno = $("#ted").is(":checked") ? "tedesco" : "inglese"
 
-        filteredData = dati.filter(d => d.LEN == lingua)
+        // filteredData = dati.filter(d => d.LEN == lingua)
 
 
+
+        // console.log("dati filtrati per anno: ", filteredData)
+
+        let lingue = [];
+
+        ["DE", "ENG"].map((lingua) => {
+            if ($(`#${lingua}`).is(":checked"))
+                lingue.push(lingua)
+        });
+
+        console.log(lingue)
+
+        filteredData = dati.filter(d => lingue.includes(d.LEN))
+
+        console.log("dati filtrati per lingua: ", filteredData)
+
+
+        let anni = [];
+
+        [2016, 2017].map((anno) => {
+            if ($(`#${anno}`).is(":checked"))
+                anni.push(anno)
+        });
+
+        console.log(anni)
+
+        filteredData = filteredData.filter(d => anni.includes(d.ANNO))
 
         console.log("dati filtrati per anno: ", filteredData)
+
 
         let levels = [];
 
@@ -327,7 +361,6 @@
         }
 
         comparati.map(row => {
-            console.log("row", row)
             let ctx = document.createElement("canvas")
             let title = document.createElement("h1")
             title.className = "titoletto"
@@ -455,6 +488,24 @@
 
     function modificaDomanda() {
         set("S1", !document.getElementById("A1").checked)
+    }
+
+    function set(id, abilitato) {
+        let element = document.getElementById(id)
+        if (abilitato) {
+            element.disabled = false;
+        }
+        else {
+            element.disabled = true;
+            element.checked = false;
+        }
+    }
+
+    function modificaIndicatore() {
+        set("COERENZA", !document.getElementById("S2").checked)
+        set("CAPACITA", !document.getElementById("S2").checked)
+        set("OPINIONI", !document.getElementById("S2").checked)
+        set("SENTIMENTI", !document.getElementById("S2").checked)
     }
 
     function set(id, abilitato) {
