@@ -30,13 +30,13 @@
                 <div class="tile is-parent">
                     <article class="tile is-child box">
                         <p class="title">Lingua</p>
-                        <input type="checkbox" name="ted" id="DE" checked>
-                        <label for="ted">
+                        <input type="checkbox" name="ted" id="DE">
+                        <label for="DE">
                             Tedesco
                         </label>
                         <br>
                         <input type="checkbox" name="ing" id="ENG">
-                        <label for="ing">
+                        <label for="ENG">
                             Inglese
                         </label>
                     </article>
@@ -45,96 +45,213 @@
                 <div class="tile is-parent">
                     <article class="tile is-child box">
                         <p class="title">Anno</p>
-                        <input type="checkbox" name="2016" id="2016" checked>
+                        <input type="checkbox" name="anno" id="2016" onchange="visualizza2016()">
                         <label for="2016">
                             2016
                         </label>
                         <br>
-                        <input type="checkbox" name="2017" id="2017">
+                        <input type="checkbox" name="anno" id="2017" onchange="visualizza2017()">
                         <label for="2017">
                             2017 Tryout
                         </label>
                         <br>
-                        <label for="2018" disabled></label>
-                        <input type="checkbox" disabled name="2018"> 2018
+
+                        <input type="checkbox" disabled name="2018">
+                        <label for="2018" disabled>
+                            2018
                         </label>
 
-
+                        <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a>
                     </article>
                 </div>
 
                 <div class="tile is-parent">
                     <article class="tile is-child box">
                         <p class="title">Livello</p>
-                        <input type="radio" name="livello" id="A1" onchange="modificaDomanda()" checked> A1
+                        <input type="radio" name="livello" id="A1" onchange="modificaDomanda()">
+                        <label for="A1">
+                            A1
+                        </label>
                         <br>
-                        <input type="radio" name="livello" id="A2" onchange="modificaDomanda()"> A2
+                        <input type="radio" name="livello" id="A2" onchange="modificaDomanda()">
+                        <label for="A2">
+                            A2
+                        </label>
                         <br>
-                        <input type="radio" name="livello" id="B1" onchange="modificaDomanda()"> B1
+                        <input type="radio" name="livello" id="B1" onchange="modificaDomanda()">
+                        <label for="B1">
+                            B1
+                        </label>
                     </article>
                 </div>
 
-                <div class="tile is-parent">
+                <div class="tile is-parent is-vertical">
                     <article class="tile is-child box">
                         <p class="title">Prova</p>
-                        <label class="checkbox" disabled>
-                            <input type="checkbox" disabled name="let"> Lettura
+                        <input type="checkbox" disabled id="LET">
+                        <label for="LET" disabled>
+                            Lettura
                         </label>
                         <br>
-                        <input type="checkbox" name="scr" checked> Scrittura
-                        <br>
-                        <label class="checkbox" disabled>
-                            <input type="checkbox" disabled name="par"> Parlato
-                            <br>
-                            <input type="checkbox" disabled name="asc"> Ascolto
-                            <br>
-                            <input type="checkbox" disabled name="com"> Competenze formali
+                        <input type="checkbox" id="SCR" checked>
+                        <label for="SCR">
+                            Scrittura
                         </label>
-                    </article>
-                </div>
+                        <br>
+                        <input type="checkbox" disabled id="PAR">
+                        <label for="PAR">
+                            Parlato
+                        </label>
+                        <br>
+                        <input type="checkbox" disabled id="ASC">
+                        <label for="ASC">
+                            Ascolto
+                        </label>
+                        <br>
+                        <input type="checkbox" disabled id="COM">
+                        <label for="COM">
+                            Competenze formali
+                        </label>
 
-                <div class="tile is-parent">
+                    </article>
                     <article class="tile is-child box">
                         <p class="title">Tipo domanda</p>
-                        <label class="checkbox" disabled>
-                            <input type="checkbox"> P1
-                            <br>
-                            <input type="checkbox"> P2
+                        <input type="checkbox" id="P1" disabled>
+                        <label for="P1">
+                            P1
                         </label>
                         <br>
-                        <input type="checkbox" name="S1" id="S1"> S1
+                        <input type="checkbox" id="P2" disabled>
+                        <label for="P2">
+                            P2
+                        </label>
                         <br>
-                        <input type="checkbox" name="S2" id="S2" onchange="modificaIndicatore()" checked> S2
+                        <input type="checkbox" name="S1" id="S1">
+                        <label for="S1">
+                            S1
+                        </label>
+                        <br>
+                        <input type="checkbox" name="S2" id="S2" onchange="modificaIndicatore()">
+                        <label for="S2">
+                            S2
+                        </label>
                     </article>
+
                 </div>
+
+                <!-- <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Tipo domanda</p>
+                        <input type="checkbox" id="P1" disabled>
+                        <label for="P1">
+                            P1
+                        </label>
+                        <br>
+                        <input type="checkbox" id="P2" disabled>
+                        <label for="P2">
+                            P2
+                        </label>
+                        <br>
+                        <input type="checkbox" name="S1" id="S1">
+                        <label for="S1">
+                            S1
+                        </label>
+                        <br>
+                        <input type="checkbox" name="S2" id="S2" onchange="modificaIndicatore()" checked>
+                        <label for="S2">
+                            S2
+                        </label>
+                    </article>
+                </div> -->
 
                 <div class="tile is-parent">
                     <article class="tile is-child box">
-                        <p class="title">Indicatore</p>
-                        <input type="checkbox" name="let" id="LESSICO" checked> Lessico
-                        <br>
-                        <input type="checkbox" name="scr" id="CORRETTEZZA"> Correttezza competenze formali
-                        <br>
-                        <input type="checkbox" name="par" id="ADEMPIMENTO"> Adempimento alla consegna
-                        <br>
-                        <input type="checkbox" name="asc" id="COERENZA"> Coerenza e coesione
-                        <br>
-                        <input type="checkbox" name="com" id="CAPACITA"> Capacità comunicative e descrittive
-                        <br>
-                        <input type="checkbox" name="com" id="OPINIONI"> Capacità esprimere proprie opinioni
-                        <br>
-                        <input type="checkbox" name="com" id="SENTIMENTI"> Capacità esprimere i propri sentimenti
+                        <p class="title">Indicatori 2016 e 2017</p>
+                        <div id="indicatori2016">
+                            <input type="radio" name="ind2016" id="LESSICO">
+                            <label for="LESSICO">
+                                Lessico
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2016" id="CORRETTEZZA">
+                            <label for="CORRETTEZZA">
+                                Correttezza competenze formali
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2016" id="ADEMPIMENTO">
+                            <label for="ADEMPIMENTO">
+                                Adempimento alla consegna
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2016" id="COERENZA">
+                            <label for="COERENZA">
+                                Coerenza e coesione
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2016" id="CAPACITA">
+                            <label for="CAPACITA">
+                                Capacità comunicative e descrittive
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2016" id="OPINIONI">
+                            <label for="OPINIONI">
+                                Capacità esprimere proprie opinioni
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2016" id="SENTIMENTI">
+                            <label for="SENTIMENTI">
+                                Capacità esprimere i propri sentimenti
+                            </label>
+                            <br>
+                        </div>
+                    </article>
+                </div>
 
+
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Indicatori solo 2017</p>
+                        <div id="indicatori2017">
+                            <!-- <input type="radio" name="ind2017" id="ADEMPIMENTO">
+                            <label for="ADEMPIMENTO">
+                                Adempimento alla consegna
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2017" id="CORRETTEZZA">
+                            <label for="CORRETTEZZA">
+                                Correttezza morfo-sintattica
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2017" id="LESSICO">
+                            <label for="LESSICO">
+                                Appropriatezza lessicale
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2017" id="CAPACITA">
+                            <label for="CAPACITA">
+                                Capacità descrittive
+                            </label>
+                            <br> -->
+                            <input type="radio" name="ind2017" id="IMPRESSIONE">
+                            <label for="IMPRESSIONE">
+                                Impressione generale
+                            </label>
+                            <br>
+                            <input type="radio" name="ind2017" id="ORTOGRAFIA">
+                            <label for="ORTOGRAFIA">
+                                Ortografia e punteggiatura
+                            </label>
+                        </div>
                     </article>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="content has-text-centered">
-                <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a>
-                <a class="button is-rounded" id="confronta" onclick="visualizza()">Visualizza</a>
-            </div>
+        <!-- <div class="footer"> -->
+        <div class="content has-text-centered">
+            <!-- <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a> -->
+            <a class="button is-rounded" id="confronta" onclick="visualizza()">Visualizza</a>
         </div>
+        <!-- </div> -->
 
         <div id="graphs">
 
@@ -230,9 +347,15 @@
 
         let inds = [];
 
-        ["LESSICO", "CORRETTEZZA", "ADEMPIMENTO", "COERENZA", "CAPACITA", "OPINIONI", "SENTIMENTI"].map((ind) => {
-            if ($(`#${ind}`).is(":checked"))
-                inds.push(ind)
+        ["LESSICO", "CORRETTEZZA", "ADEMPIMENTO-2017", "COERENZA", "CAPACITA", "OPINIONI", "SENTIMENTI", "IMPRESSIONE", "ORTOGRAFIA"].map((ind) => {
+            let indicatore = ind.split("-")[0]
+            console.log(indicatore)
+            if ($(`#${ind}`).is(":checked")) {
+                // if(ind.contains("-"))
+                //     indicatore = ind.split("-")[0]
+                inds.push(indicatore)
+
+            }
         });
 
         console.log(inds)
@@ -240,6 +363,11 @@
         filteredData = filteredData.filter(d => inds.includes(d.INDICATORE))
 
         console.log("dati filtrati per indicatore: ", filteredData)
+
+
+
+        if (filteredData.length == 0)
+            alert("Nessun dato corrispondente ai filtri inseriti")
 
 
         filteredData.map(row => {
@@ -432,8 +560,8 @@
 
         });
 
-        myChart.canvas.parentNode.style.height = '900px';
-        myChart.canvas.parentNode.style.width = '900px';
+        // myChart.canvas.parentNode.style.height = '500px';
+        // myChart.canvas.parentNode.style.width = '500px';
         return ctx;
     }
 
@@ -490,17 +618,6 @@
         set("S1", !document.getElementById("A1").checked)
     }
 
-    function set(id, abilitato) {
-        let element = document.getElementById(id)
-        if (abilitato) {
-            element.disabled = false;
-        }
-        else {
-            element.disabled = true;
-            element.checked = false;
-        }
-    }
-
     function modificaIndicatore() {
         set("COERENZA", !document.getElementById("S2").checked)
         set("CAPACITA", !document.getElementById("S2").checked)
@@ -518,6 +635,70 @@
             element.checked = false;
         }
     }
+
+    function visualizza2017() {
+        // if (document.getElementById("2017").checked && !document.getElementById("2016").checked) {
+        //     $("#indicatori2017").toggle();
+        //     var x = document.getElementById("myAnchor").getAttribute("target");
+        if (document.getElementById("2017").checked) {
+            $("#indicatori2017").toggle();
+            console.log($("#indicatori2017").is(":visible"));
+        }
+
+        if (!document.getElementById("2017").checked && $("#indicatori2017").is(":visible")) {
+
+            document.getElementById("IMPRESSIONE").checked = false;
+            document.getElementById("ORTOGRAFIA").checked = false;
+            $("#indicatori2017").toggle();
+        }
+    }
+
+    function visualizza2016() {
+        // if (document.getElementById("2017").checked && !document.getElementById("2016").checked) {
+        //     $("#indicatori2017").toggle();
+        //     var x = document.getElementById("myAnchor").getAttribute("target");
+        if (document.getElementById("2016").checked) {
+            $("#indicatori2016").toggle();
+            console.log($("#indicatori2016").is(":visible"));
+        }
+
+        if (!document.getElementById("2016").checked && $("#indicatori2016").is(":visible")) {
+            document.getElementById("LESSICO").checked = false;
+            document.getElementById("CORRETTEZZA").checked = false;
+            document.getElementById("ADEMPIMENTO").checked = false;
+            document.getElementById("OPINIONI").checked = false;
+            document.getElementById("CAPACITA").checked = false;
+            document.getElementById("SENTIMENTI").checked = false;
+            document.getElementById("COERENZA").checked = false;
+            $("#indicatori2016").toggle();
+
+        }
+    }
+    // console.log(document.getElementById("indicatori2016").getAttribute("display"))
+
+    // if (document.getElementById("2016").checked && document.getElementById("2017").checked) {
+    //     $("#indicatori2016").toggle();
+    // }
+    // if (!document.getElementById("2017").checked) {
+    //     $("#indicatori2017").toggle();
+    //     $("#indicatori2016").toggle();
+
+    // }
+    // }
+
+    // function visualizza2016() {
+    //     if (document.getElementById("2016").checked) {
+    //         $("#indicatori2016").toggle();
+    //         document.getElementById("LESSICO").checked = false;
+    //         // element.checked = false;
+    //     }
+    //     if (!document.getElementById("2016").checked) {
+    //         $("#indicatori2016").toggle();
+    //         // let element = document.getElementById("LESSICO")
+    //         // element.checked = false;
+    //     }
+    // }
+
 
 </script>
 
