@@ -246,12 +246,12 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="footer"> -->
+
         <div class="content has-text-centered">
-            <!-- <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a> -->
+
             <a class="button is-rounded" id="confronta" onclick="visualizza()">Visualizza</a>
         </div>
-        <!-- </div> -->
+
 
         <div id="graphs">
 
@@ -277,16 +277,6 @@
     function visualizza() {
         let divGrafici = document.getElementById("graphs");
         divGrafici.innerHTML = '';
-
-        // let lingua = $("#ted").is(":checked") ? "DE" : "ENG"
-        // console.log(lingua)
-        // let anno = $("#ted").is(":checked") ? "tedesco" : "inglese"
-
-        // filteredData = dati.filter(d => d.LEN == lingua)
-
-
-
-        // console.log("dati filtrati per anno: ", filteredData)
 
         let lingue = [];
 
@@ -612,7 +602,6 @@
 
     }
 
-    //().ready(confronta)
 
     function modificaDomanda() {
         set("S1", !document.getElementById("A1").checked)
@@ -637,9 +626,6 @@
     }
 
     function visualizza2017() {
-        // if (document.getElementById("2017").checked && !document.getElementById("2016").checked) {
-        //     $("#indicatori2017").toggle();
-        //     var x = document.getElementById("myAnchor").getAttribute("target");
         if (document.getElementById("2017").checked) {
             $("#indicatori2017").toggle();
             console.log($("#indicatori2017").is(":visible"));
@@ -654,9 +640,6 @@
     }
 
     function visualizza2016() {
-        // if (document.getElementById("2017").checked && !document.getElementById("2016").checked) {
-        //     $("#indicatori2017").toggle();
-        //     var x = document.getElementById("myAnchor").getAttribute("target");
         if (document.getElementById("2016").checked) {
             $("#indicatori2016").toggle();
             console.log($("#indicatori2016").is(":visible"));
@@ -674,32 +657,6 @@
 
         }
     }
-    // console.log(document.getElementById("indicatori2016").getAttribute("display"))
-
-    // if (document.getElementById("2016").checked && document.getElementById("2017").checked) {
-    //     $("#indicatori2016").toggle();
-    // }
-    // if (!document.getElementById("2017").checked) {
-    //     $("#indicatori2017").toggle();
-    //     $("#indicatori2016").toggle();
-
-    // }
-    // }
-
-    // function visualizza2016() {
-    //     if (document.getElementById("2016").checked) {
-    //         $("#indicatori2016").toggle();
-    //         document.getElementById("LESSICO").checked = false;
-    //         // element.checked = false;
-    //     }
-    //     if (!document.getElementById("2016").checked) {
-    //         $("#indicatori2016").toggle();
-    //         // let element = document.getElementById("LESSICO")
-    //         // element.checked = false;
-    //     }
-    // }
-
-
 </script>
 
 </html>
