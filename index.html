@@ -13,133 +13,134 @@
 
 <body>
     <div id="corpo">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <div class="navbar-item">
-                    <img src="logo.png" width="112" height="30">
+        <div id="sinistra">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <div class="navbar-item">
+                        <img src="logo.png" width="112" height="30">
+
+                    </div>
+                    <div class="navbar-item content has-text-centered" id="testo">
+                        TRENTINO LANGUAGE TESTING
+                    </div>
 
                 </div>
-                <div class="navbar-item content has-text-centered" id="testo">
-                    TRENTINO LANGUAGE TESTING
-                </div>
+            </nav>
+            <div class="container">
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <p class="title">Lingua</p>
+                            <input type="checkbox" name="ted" id="DE">
+                            <label for="DE">
+                                Tedesco
+                            </label>
+                            <br>
+                            <input type="checkbox" name="ing" id="ENG">
+                            <label for="ENG">
+                                Inglese
+                            </label>
+                        </article>
+                    </div>
 
-            </div>
-        </nav>
-        <div class="container">
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <p class="title">Lingua</p>
-                        <input type="checkbox" name="ted" id="DE">
-                        <label for="DE">
-                            Tedesco
-                        </label>
-                        <br>
-                        <input type="checkbox" name="ing" id="ENG">
-                        <label for="ENG">
-                            Inglese
-                        </label>
-                    </article>
-                </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <p class="title">Anno</p>
+                            <input type="checkbox" name="anno" id="2016" onchange="visualizza2016()">
+                            <label for="2016">
+                                2016
+                            </label>
+                            <br>
+                            <input type="checkbox" name="anno" id="2017" onchange="visualizza2017()">
+                            <label for="2017">
+                                2017 Tryout
+                            </label>
+                            <br>
 
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <p class="title">Anno</p>
-                        <input type="checkbox" name="anno" id="2016" onchange="visualizza2016()">
-                        <label for="2016">
-                            2016
-                        </label>
-                        <br>
-                        <input type="checkbox" name="anno" id="2017" onchange="visualizza2017()">
-                        <label for="2017">
-                            2017 Tryout
-                        </label>
-                        <br>
+                            <input type="checkbox" disabled name="2018">
+                            <label for="2018" disabled>
+                                2018
+                            </label>
 
-                        <input type="checkbox" disabled name="2018">
-                        <label for="2018" disabled>
-                            2018
-                        </label>
+                            <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a>
+                        </article>
+                    </div>
 
-                        <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a>
-                    </article>
-                </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <p class="title">Livello</p>
+                            <input type="radio" name="livello" id="A1" onchange="modificaDomanda()">
+                            <label for="A1">
+                                A1
+                            </label>
+                            <br>
+                            <input type="radio" name="livello" id="A2" onchange="modificaDomanda()">
+                            <label for="A2">
+                                A2
+                            </label>
+                            <br>
+                            <input type="radio" name="livello" id="B1" onchange="modificaDomanda()">
+                            <label for="B1">
+                                B1
+                            </label>
+                        </article>
+                    </div>
 
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <p class="title">Livello</p>
-                        <input type="radio" name="livello" id="A1" onchange="modificaDomanda()">
-                        <label for="A1">
-                            A1
-                        </label>
-                        <br>
-                        <input type="radio" name="livello" id="A2" onchange="modificaDomanda()">
-                        <label for="A2">
-                            A2
-                        </label>
-                        <br>
-                        <input type="radio" name="livello" id="B1" onchange="modificaDomanda()">
-                        <label for="B1">
-                            B1
-                        </label>
-                    </article>
-                </div>
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child box">
+                            <p class="title">Prova</p>
+                            <input type="checkbox" disabled id="LET">
+                            <label for="LET" disabled>
+                                Lettura
+                            </label>
+                            <br>
+                            <input type="checkbox" id="SCR" checked>
+                            <label for="SCR">
+                                Scrittura
+                            </label>
+                            <br>
+                            <input type="checkbox" disabled id="PAR">
+                            <label for="PAR">
+                                Parlato
+                            </label>
+                            <br>
+                            <input type="checkbox" disabled id="ASC">
+                            <label for="ASC">
+                                Ascolto
+                            </label>
+                            <br>
+                            <input type="checkbox" disabled id="COM">
+                            <label for="COM">
+                                Competenze formali
+                            </label>
 
-                <div class="tile is-parent is-vertical">
-                    <article class="tile is-child box">
-                        <p class="title">Prova</p>
-                        <input type="checkbox" disabled id="LET">
-                        <label for="LET" disabled>
-                            Lettura
-                        </label>
-                        <br>
-                        <input type="checkbox" id="SCR" checked>
-                        <label for="SCR">
-                            Scrittura
-                        </label>
-                        <br>
-                        <input type="checkbox" disabled id="PAR">
-                        <label for="PAR">
-                            Parlato
-                        </label>
-                        <br>
-                        <input type="checkbox" disabled id="ASC">
-                        <label for="ASC">
-                            Ascolto
-                        </label>
-                        <br>
-                        <input type="checkbox" disabled id="COM">
-                        <label for="COM">
-                            Competenze formali
-                        </label>
+                        </article>
+                        <article class="tile is-child box">
+                            <p class="title">Tipo domanda</p>
+                            <input type="checkbox" id="P1" disabled>
+                            <label for="P1">
+                                P1
+                            </label>
+                            <br>
+                            <input type="checkbox" id="P2" disabled>
+                            <label for="P2">
+                                P2
+                            </label>
+                            <br>
+                            <input type="checkbox" name="S1" id="S1">
+                            <label for="S1">
+                                S1
+                            </label>
+                            <br>
+                            <input type="checkbox" name="S2" id="S2" onchange="modificaIndicatore()">
+                            <label for="S2">
+                                S2
+                            </label>
+                        </article>
 
-                    </article>
-                    <article class="tile is-child box">
-                        <p class="title">Tipo domanda</p>
-                        <input type="checkbox" id="P1" disabled>
-                        <label for="P1">
-                            P1
-                        </label>
-                        <br>
-                        <input type="checkbox" id="P2" disabled>
-                        <label for="P2">
-                            P2
-                        </label>
-                        <br>
-                        <input type="checkbox" name="S1" id="S1">
-                        <label for="S1">
-                            S1
-                        </label>
-                        <br>
-                        <input type="checkbox" name="S2" id="S2" onchange="modificaIndicatore()">
-                        <label for="S2">
-                            S2
-                        </label>
-                    </article>
+                    </div>
 
-                </div>
-
-                <!-- <div class="tile is-parent">
+                    <!-- <div class="tile is-parent">
                     <article class="tile is-child box">
                         <p class="title">Tipo domanda</p>
                         <input type="checkbox" id="P1" disabled>
@@ -164,55 +165,55 @@
                     </article>
                 </div> -->
 
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <p class="title">Indicatori 2016 e 2017</p>
-                        <div id="indicatori2016">
-                            <input type="radio" name="ind2016" id="LESSICO">
-                            <label for="LESSICO">
-                                Lessico
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2016" id="CORRETTEZZA">
-                            <label for="CORRETTEZZA">
-                                Correttezza competenze formali
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2016" id="ADEMPIMENTO">
-                            <label for="ADEMPIMENTO">
-                                Adempimento alla consegna
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2016" id="COERENZA">
-                            <label for="COERENZA">
-                                Coerenza e coesione
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2016" id="CAPACITA">
-                            <label for="CAPACITA">
-                                Capacità comunicative e descrittive
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2016" id="OPINIONI">
-                            <label for="OPINIONI">
-                                Capacità esprimere proprie opinioni
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2016" id="SENTIMENTI">
-                            <label for="SENTIMENTI">
-                                Capacità esprimere i propri sentimenti
-                            </label>
-                            <br>
-                        </div>
-                    </article>
-                </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <p class="title">Indicatori 2016 e 2017</p>
+                            <div id="indicatori2016">
+                                <input type="radio" name="ind2016" id="LESSICO">
+                                <label for="LESSICO">
+                                    Lessico
+                                </label>
+                                <br>
+                                <input type="radio" name="ind2016" id="CORRETTEZZA">
+                                <label for="CORRETTEZZA">
+                                    Correttezza competenze formali
+                                </label>
+                                <br>
+                                <input type="radio" name="ind2016" id="ADEMPIMENTO">
+                                <label for="ADEMPIMENTO">
+                                    Adempimento alla consegna
+                                </label>
+                                <br>
+                                <input type="radio" name="ind2016" id="COERENZA">
+                                <label for="COERENZA">
+                                    Coerenza e coesione
+                                </label>
+                                <br>
+                                <input type="radio" name="ind2016" id="CAPACITA">
+                                <label for="CAPACITA">
+                                    Capacità comunicative e descrittive
+                                </label>
+                                <br>
+                                <input type="radio" name="ind2016" id="OPINIONI">
+                                <label for="OPINIONI">
+                                    Capacità esprimere proprie opinioni
+                                </label>
+                                <br>
+                                <input type="radio" name="ind2016" id="SENTIMENTI">
+                                <label for="SENTIMENTI">
+                                    Capacità esprimere i propri sentimenti
+                                </label>
+                                <br>
+                            </div>
+                        </article>
+                    </div>
 
 
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <p class="title">Indicatori solo 2017</p>
-                        <div id="indicatori2017">
-                            <!-- <input type="radio" name="ind2017" id="ADEMPIMENTO">
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <p class="title">Indicatori solo 2017</p>
+                            <div id="indicatori2017">
+                                <!-- <input type="radio" name="ind2017" id="ADEMPIMENTO">
                             <label for="ADEMPIMENTO">
                                 Adempimento alla consegna
                             </label>
@@ -232,29 +233,31 @@
                                 Capacità descrittive
                             </label>
                             <br> -->
-                            <input type="radio" name="ind2017" id="IMPRESSIONE">
-                            <label for="IMPRESSIONE">
-                                Impressione generale
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2017" id="ORTOGRAFIA">
-                            <label for="ORTOGRAFIA">
-                                Ortografia e punteggiatura
-                            </label>
-                        </div>
-                    </article>
+                                <input type="radio" name="ind2017" id="IMPRESSIONE">
+                                <label for="IMPRESSIONE">
+                                    Impressione generale
+                                </label>
+                                <br>
+                                <input type="radio" name="ind2017" id="ORTOGRAFIA">
+                                <label for="ORTOGRAFIA">
+                                    Ortografia e punteggiatura
+                                </label>
+                            </div>
+                        </article>
+                    </div>
                 </div>
+            </div>
+
+            <div class="content has-text-centered">
+
+                <a class="button is-rounded" id="confronta" onclick="visualizza()">Visualizza</a>
             </div>
         </div>
 
-        <div class="content has-text-centered">
+        <div id="destra">
+            <div id="graphs">
 
-            <a class="button is-rounded" id="confronta" onclick="visualizza()">Visualizza</a>
-        </div>
-
-
-        <div id="graphs">
-
+            </div>
         </div>
     </div>
 </body>

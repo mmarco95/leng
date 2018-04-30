@@ -85,3 +85,14 @@ h1 {
 #indicatori2017 {
   display: none;
 }
+
+#sinistra {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+#destra {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
