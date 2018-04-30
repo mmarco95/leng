@@ -28,7 +28,7 @@
             </nav>
             <div class="container">
                 <div class="tile is-ancestor">
-                    <div class="tile is-parent">
+                    <div class="tile is-parent is-vertical">
                         <article class="tile is-child box">
                             <p class="title">Lingua</p>
                             <input type="checkbox" name="ted" id="DE">
@@ -41,9 +41,7 @@
                                 Inglese
                             </label>
                         </article>
-                    </div>
 
-                    <div class="tile is-parent">
                         <article class="tile is-child box">
                             <p class="title">Anno</p>
                             <input type="checkbox" name="anno" id="2016" onchange="visualizza2016()">
@@ -62,7 +60,7 @@
                                 2018
                             </label>
 
-                            <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a>
+                            <!-- <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a> -->
                         </article>
                     </div>
 
@@ -89,11 +87,11 @@
                     <div class="tile is-parent is-vertical">
                         <article class="tile is-child box">
                             <p class="title">Prova</p>
-                            <input type="checkbox" disabled id="LET">
+                            <!-- <input type="checkbox" disabled id="LET">
                             <label for="LET" disabled>
                                 Lettura
                             </label>
-                            <br>
+                            <br> -->
                             <input type="checkbox" id="SCR" checked>
                             <label for="SCR">
                                 Scrittura
@@ -103,7 +101,7 @@
                             <label for="PAR">
                                 Parlato
                             </label>
-                            <br>
+                            <!-- <br>
                             <input type="checkbox" disabled id="ASC">
                             <label for="ASC">
                                 Ascolto
@@ -112,7 +110,7 @@
                             <input type="checkbox" disabled id="COM">
                             <label for="COM">
                                 Competenze formali
-                            </label>
+                            </label> -->
 
                         </article>
                         <article class="tile is-child box">
@@ -140,36 +138,11 @@
 
                     </div>
 
-                    <!-- <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <p class="title">Tipo domanda</p>
-                        <input type="checkbox" id="P1" disabled>
-                        <label for="P1">
-                            P1
-                        </label>
-                        <br>
-                        <input type="checkbox" id="P2" disabled>
-                        <label for="P2">
-                            P2
-                        </label>
-                        <br>
-                        <input type="checkbox" name="S1" id="S1">
-                        <label for="S1">
-                            S1
-                        </label>
-                        <br>
-                        <input type="checkbox" name="S2" id="S2" onchange="modificaIndicatore()" checked>
-                        <label for="S2">
-                            S2
-                        </label>
-                    </article>
-                </div> -->
-
-                    <div class="tile is-parent">
+                    <div class="tile is-parent is-vertical">
                         <article class="tile is-child box">
                             <p class="title">Indicatori 2016 e 2017</p>
                             <div id="indicatori2016">
-                                <input type="radio" name="ind2016" id="LESSICO">
+                                <!-- <input type="radio" name="ind2016" id="LESSICO">
                                 <label for="LESSICO">
                                     Lessico
                                 </label>
@@ -203,13 +176,19 @@
                                 <label for="SENTIMENTI">
                                     Capacità esprimere i propri sentimenti
                                 </label>
-                                <br>
+                                <br> -->
+                                <select>
+                                    <option value="volvo">Correttezza competenze formali</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
                             </div>
                         </article>
-                    </div>
 
 
-                    <div class="tile is-parent">
+
+
                         <article class="tile is-child box">
                             <p class="title">Indicatori solo 2017</p>
                             <div id="indicatori2017">
