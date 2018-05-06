@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="tile is-ancestor">
                     <div class="tile is-parent is-vertical">
-                        <article class="tile is-child box">
+                        <article class="tile is-child">
                             <p class="title">Lingua</p>
                             <input type="checkbox" name="ted" id="DE">
                             <label for="DE">
@@ -43,7 +43,7 @@
                             </label>
                         </article>
 
-                        <article class="tile is-child box">
+                        <article class="tile is-child">
                             <p class="title">Anno</p>
                             <input type="checkbox" name="anno" id="2016" onchange="visualizza2016()">
                             <label for="2016">
@@ -65,8 +65,8 @@
                         </article>
                     </div>
 
-                    <div class="tile is-parent">
-                        <article class="tile is-child box">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child">
                             <p class="title">Livello</p>
                             <input type="radio" name="livello" id="A1" onchange="modificaDomanda()">
                             <label for="A1">
@@ -83,16 +83,11 @@
                                 B1
                             </label>
                         </article>
-                    </div>
+                   
 
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child box">
+                    
+                        <article class="tile is-child">
                             <p class="title">Prova</p>
-                            <!-- <input type="checkbox" disabled id="LET">
-                            <label for="LET" disabled>
-                                Lettura
-                            </label>
-                            <br> -->
                             <input type="checkbox" id="SCR" checked>
                             <label for="SCR">
                                 Scrittura
@@ -102,19 +97,9 @@
                             <label for="PAR">
                                 Parlato
                             </label>
-                            <!-- <br>
-                            <input type="checkbox" disabled id="ASC">
-                            <label for="ASC">
-                                Ascolto
-                            </label>
-                            <br>
-                            <input type="checkbox" disabled id="COM">
-                            <label for="COM">
-                                Competenze formali
-                            </label> -->
 
                         </article>
-                        <article class="tile is-child box">
+                        <article class="tile is-child">
                             <p class="title">Tipo domanda</p>
                             <input type="checkbox" id="P1" disabled>
                             <label for="P1">
@@ -140,44 +125,9 @@
                     </div>
 
                     <div class="tile is-parent is-vertical">
-                        <article class="tile is-child box">
+                        <article class="tile is-child">
                             <p class="title">Indicatori 2016 e 2017</p>
                             <div id="indicatori2016">
-                                <!-- <input type="radio" name="ind2016" id="LESSICO">
-                                <label for="LESSICO">
-                                    Lessico
-                                </label>
-                                <br>
-                                <input type="radio" name="ind2016" id="CORRETTEZZA">
-                                <label for="CORRETTEZZA">
-                                    Correttezza competenze formali
-                                </label>
-                                <br>
-                                <input type="radio" name="ind2016" id="ADEMPIMENTO">
-                                <label for="ADEMPIMENTO">
-                                    Adempimento alla consegna
-                                </label>
-                                <br>
-                                <input type="radio" name="ind2016" id="COERENZA">
-                                <label for="COERENZA">
-                                    Coerenza e coesione
-                                </label>
-                                <br>
-                                <input type="radio" name="ind2016" id="CAPACITA">
-                                <label for="CAPACITA">
-                                    Capacità comunicative e descrittive
-                                </label>
-                                <br>
-                                <input type="radio" name="ind2016" id="OPINIONI">
-                                <label for="OPINIONI">
-                                    Capacità esprimere proprie opinioni
-                                </label>
-                                <br>
-                                <input type="radio" name="ind2016" id="SENTIMENTI">
-                                <label for="SENTIMENTI">
-                                    Capacità esprimere i propri sentimenti
-                                </label>
-                                <br> -->
                                 <select name="INDICATORE2" id="INDICATORE2">
                                     <option value="LESSICO">Lessico</option>
                                     <option value="CORRETTEZZA">Correttezza competenze formali</option>
@@ -193,52 +143,21 @@
 
 
 
-                        <article class="tile is-child box">
+                        <article class="tile is-child">
                             <p class="title">Indicatori solo 2017</p>
                             <div id="indicatori2017">
-                                <!-- <input type="radio" name="ind2017" id="ADEMPIMENTO">
-                            <label for="ADEMPIMENTO">
-                                Adempimento alla consegna
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2017" id="CORRETTEZZA">
-                            <label for="CORRETTEZZA">
-                                Correttezza morfo-sintattica
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2017" id="LESSICO">
-                            <label for="LESSICO">
-                                Appropriatezza lessicale
-                            </label>
-                            <br>
-                            <input type="radio" name="ind2017" id="CAPACITA">
-                            <label for="CAPACITA">
-                                Capacità descrittive
-                            </label>
-                            <br> -->
-                                <!-- <input type="radio" name="ind2017" id="IMPRESSIONE">
-                                <label for="IMPRESSIONE">
-                                    Impressione generale
-                                </label>
-                                <br>
-                                <input type="radio" name="ind2017" id="ORTOGRAFIA">
-                                <label for="ORTOGRAFIA">
-                                    Ortografia e punteggiatura
-                                </label> -->
-
                                 <select name="INDICATORE2" id="INDICATORE2">
                                         <option value="IMPRESSIONE">Impressione generale</option>
-                                        <option value="ORTOGRAFIA">Ortigrafia e punteggiatura</option>
-    
+                                        <option value="ORTOGRAFIA">Ortigrafia e punteggiatura</option>   
                                     </select>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
+        
 
             <div class="content has-text-centered">
-
                 <a class="button is-rounded" id="confronta" onclick="bivio()">Visualizza</a>
             </div>
         </div>
@@ -388,11 +307,13 @@
         let divGrafici = document.getElementById("graphs");
         divGrafici.innerHTML = '';
 
-        let lingua = $("#ted").is(":checked") ? "DE" : "ENG"
-        //console.log(lingua)
-        // let anno = $("#ted").is(":checked") ? "tedesco" : "inglese"
+        let lingue = [];
 
-        filteredData = dati.filter(d => d.LEN == lingua)
+        ["DE", "ENG"].map((lingua) => {
+            if ($(`#${lingua}`).is(":checked"))
+                lingue.push(lingua)
+        });
+        filteredData = dati.filter(d => d.LEN == lingue)
 
 
 
@@ -616,6 +537,7 @@
         set("CAPACITA", !document.getElementById("S2").checked)
         set("OPINIONI", !document.getElementById("S2").checked)
         set("SENTIMENTI", !document.getElementById("S2").checked)
+
     }
 
     function set(id, abilitato) {
@@ -632,13 +554,10 @@
     function visualizza2017() {
         if (document.getElementById("2017").checked) {
             $("#indicatori2017").toggle();
-            console.log($("#indicatori2017").is(":visible"));
+          
         }
 
-        if (!document.getElementById("2017").checked && $("#indicatori2017").is(":visible")) {
-
-            document.getElementById("IMPRESSIONE").checked = false;
-            document.getElementById("ORTOGRAFIA").checked = false;
+        if(!document.getElementById("2017").checked){
             $("#indicatori2017").toggle();
         }
     }
@@ -646,19 +565,11 @@
     function visualizza2016() {
         if (document.getElementById("2016").checked) {
             $("#indicatori2016").toggle();
-            console.log($("#indicatori2016").is(":visible"));
+
         }
 
-        if (!document.getElementById("2016").checked && $("#indicatori2016").is(":visible")) {
-            document.getElementById("LESSICO").checked = false;
-            document.getElementById("CORRETTEZZA").checked = false;
-            document.getElementById("ADEMPIMENTO").checked = false;
-            document.getElementById("OPINIONI").checked = false;
-            document.getElementById("CAPACITA").checked = false;
-            document.getElementById("SENTIMENTI").checked = false;
-            document.getElementById("COERENZA").checked = false;
+        if(!document.getElementById("2016").checked){
             $("#indicatori2016").toggle();
-
         }
     }
 </script>
