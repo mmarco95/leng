@@ -136,7 +136,7 @@
                                     <option value="CAPACITA">Capacità comunicativa e descrittive</option>
                                     <option value="OPINIONI">Capacità esprimere proprie opinioni</option>
                                     <option value="SENTIMENTI">Capacità esprimere i propri sentimenti</option>
-                                    <option value="IMPRESSIONE">Impressione generale</option>
+                                    <option value="IMPRESSIONE" class="20172">Impressione generale</option>
                                     <option value="ORTOGRAFIA">Ortografia e punteggiatura</option>
                                 </select>
                             </div>
@@ -553,27 +553,29 @@
         }
     }
 
-    // function visualizza2017() {
-    //     if (document.getElementById("2017").checked) {
-    //         $("#indicatori2017").toggle();
-          
-    //     }
+    function visualizza2016(){
+        if (document.getElementById("2016").checked) {
+           $("#INDICATORE2 option[value=IMPRESSIONE").attr('disabled',"disabled");
+            $("#INDICATORE2 option[value=ORTOGRAFIA").attr('disabled',"disabled");
+    }
+        else{
+            $("#INDICATORE2 option[value=IMPRESSIONE").removeAttr('disabled',"enab");
+            $("#INDICATORE2 option[value=ORTOGRAFIA").removeAttr('disabled',"disabled");
+        }
+    }
 
-    //     if(!document.getElementById("2017").checked){
-    //         $("#indicatori2017").toggle();
-    //     }
-    // }
-
-    // function visualizza2016() {
-    //     if (document.getElementById("2016").checked) {
-    //         $("#indicatori2016").toggle();
-
-    //     }
-
-    //     if(!document.getElementById("2016").checked){
-    //         $("#indicatori2016").toggle();
-    //     }
-    // }
+    function visualizza2017(){
+        if (document.getElementById("2017").checked) {
+            $("#INDICATORE2 option[value=SENTIMENTI").attr('disabled',"disabled");
+            $("#INDICATORE2 option[value=OPINIONI").attr('disabled',"disabled");
+            $("#INDICATORE2 option[value=COERENZA").attr('disabled',"disabled");
+        }
+        else{
+            $("#INDICATORE2 option[value=SENTIMENTI").removeAttr('disabled');
+            $("#INDICATORE2 option[value=OPINIONI").removeAttr('disabled');
+            $("#INDICATORE2 option[value=COERENZA").removeAttr('disabled');
+        }
+    }
 </script>
 
 </html>
