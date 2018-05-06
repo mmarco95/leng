@@ -88,12 +88,12 @@
 
                         <article class="tile is-child">
                             <p class="title">Prova</p>
-                            <input type="radio" id="SCR" checked>
+                            <input type="radio" name="prova" id="SCRITTO" onchange="IndicatoriScr()">
                             <label for="SCR">
                                 Scrittura
                             </label>
                             <br>
-                            <input type="radio" disabled id="PAR">
+                            <input type="radio" name="prova" id="PARLATO" onchange="IndicatoriPar()">
                             <label for="PAR">
                                 Parlato
                             </label>
@@ -101,12 +101,12 @@
                         </article>
                         <article class="tile is-child">
                             <p class="title">Tipo domanda</p>
-                            <input type="checkbox" id="P1" disabled>
+                            <input type="checkbox" id="P1">
                             <label for="P1">
                                 P1
                             </label>
                             <br>
-                            <input type="checkbox" id="P2" disabled>
+                            <input type="checkbox" id="P2">
                             <label for="P2">
                                 P2
                             </label>
@@ -126,8 +126,8 @@
 
                     <div class="tile is-parent is-vertical">
                         <article class="tile is-child">
-                            <p class="title">Indicatori</p>
-                            <div id="indicatori2016">
+                            <p class="title">Indicatori Scritto</p>
+                            <div id="indicatoriScr">
                                 <select name="INDICATORE2" id="INDICATORE2">
                                     <option value="LESSICO">Lessico</option>
                                     <option value="CORRETTEZZA">Correttezza competenze formali</option>
@@ -138,6 +138,21 @@
                                     <option value="SENTIMENTI">Capacità esprimere i propri sentimenti</option>
                                     <option value="IMPRESSIONE" class="20172">Impressione generale</option>
                                     <option value="ORTOGRAFIA">Ortografia e punteggiatura</option>
+                                </select>
+                            </div>
+                        </article>
+
+                        <article class="tile is-child">
+                            <p class="title">Indicatori Parlato</p>
+                            <div id="indicatoriPar">
+                                <select name="INDICATORE2" id="INDICATORE2">
+                                    <option value="LESSICO">Lessico</option>
+                                    <option value="CORRETTEZZA">Correttezza competenze formali</option>
+                                    <option value="PRONUNCIA">Pronuncia</option>
+                                    <option value="ADEMPIMENTO">Adempimento alla consegna</option>
+                                    <option value="TEMPO">Tempo di reazione</option>
+                                    <option value="CAPACITA">Capacità comunicativa e descrittive</option>
+                                    <option value="OPINIONI">Capacità esprimere proprie opinioni</option>
                                 </select>
                             </div>
                         </article>
@@ -227,6 +242,11 @@
         console.log("dati filtrati per anno: ", filteredData)
 
 
+
+
+
+
+
         let levels = [];
 
         ["A1", "A2", "B1"].map((level) => {
@@ -241,10 +261,24 @@
         console.log("dati filtrati per livello: ", filteredData)
 
 
+        let prove = [];
+
+        ["SCRITTO", "PARLATO"].map((prova) => {
+            if ($(`#${prova}`).is(":checked"))
+                prove.push(prova)
+        });
+
+        console.log(prove)
+
+        filteredData = filteredData.filter(d => prove.includes(d.PROVA))
+
+        console.log("dati filtrati per prova: ", filteredData)
+
+
 
         let types = [];
 
-        ["S1", "S2"].map((type) => {
+        ["S1", "S2", "P1", "P2"].map((type) => {
             if ($(`#${type}`).is(":checked"))
                 types.push(type)
         });
@@ -578,6 +612,19 @@
             $("#INDICATORE2 option[value=SENTIMENTI").removeAttr('disabled');
             $("#INDICATORE2 option[value=OPINIONI").removeAttr('disabled');
             $("#INDICATORE2 option[value=COERENZA").removeAttr('disabled');
+        }
+    }
+
+
+    function IndicatoriScr() {
+        if (document.getElementById("SCRITTO").checked) {
+            $("#indicatoriScr").toggle();
+        }
+    }
+
+    function IndicatoriPar() {
+        if (document.getElementById("PARLATO").checked) {
+            $("#indicatoriPar").toggle();
         }
     }
 </script>

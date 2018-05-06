@@ -1118,5 +1118,1126 @@
     "INDICATORE": "ORTOGRAFIA",
     "LABEL": [0, 1, 2],
     "DATA": [15, 68, 35]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [557, 366, 92]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [621, 339, 55]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [529, 369, 117]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "COERENZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [489, 665, 242]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [532, 770, 94]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [267, 670, 459]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [592, 592, 212]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [522, 651, 213]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [508, 793, 85]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [215, 677, 494]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [605, 521, 260]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "OPINIONI",
+    "LABEL": [0, 1, 2],
+    "DATA": [730, 450, 206]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "COERENZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [521, 638, 227]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [34, 169, 136]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [78, 223, 38]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "COERENZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [76, 151, 112]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [106, 121, 112]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [75, 151, 117]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [158, 172, 13]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [150, 128, 65]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "COERENZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [145, 116, 82]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [184, 78, 81]
+  },
+  {
+    "LEN": "DE",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "SENTIMENTI",
+    "LABEL": [0, 1, 2],
+    "DATA": [206, 62, 75]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [395, 409, 230]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [397, 419, 218]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [271, 466, 297]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "COERENZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [340, 741, 359]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [348, 763, 329]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [247, 480, 713]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [318, 683, 439]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [363, 623, 447]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [313, 756, 364]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [161, 448, 824]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [331, 571, 531]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "OPINIONI",
+    "LABEL": [0, 1, 2],
+    "DATA": [326, 599, 508]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "COERENZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [331, 737, 365]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [48, 145, 291]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [85, 179, 220]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "COERENZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [64, 173, 247]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [79, 161, 244]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [91, 153, 234]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [118, 213, 147]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [116, 218, 144]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "COERENZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [107, 206, 165]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [127, 187, 164]
+  },
+  {
+    "LEN": "ENG",
+    "ANNO": 2016,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "SENTIMENTI",
+    "LABEL": [0, 1, 2],
+    "DATA": [134, 178, 166]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [29, 163, 111]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [105, 162, 36]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [148, 114, 41]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [139, 127, 37]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [109, 145, 49]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [144, 128, 31]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [14, 35, 53]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [26, 41, 35]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [33, 39, 30]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [29, 30, 43]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [26, 32, 44]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [18, 33, 51]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [11, 32, 57]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [15, 54, 31]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [27, 40, 33]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [22, 30, 48]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [19, 37, 44]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [18, 30, 52]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [30, 35, 52]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [51, 42, 24]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [47, 52, 18]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [52, 35, 30]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [52, 22, 43]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [46, 21, 50]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [25, 37, 53]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [45, 41, 29]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [51, 47, 17]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [57, 29, 29]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [52, 24, 39]
+  },
+
+  {
+    "LEN": "DE",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [41, 24, 50]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [95, 155, 55]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [187, 75, 43]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [188, 73, 44]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [179, 81, 45]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [186, 67, 52]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [194, 71, 40]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [14, 20, 75]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [22, 54, 33]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [20, 53, 36]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [14, 32, 63]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [12, 38, 59]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [6, 20, 83]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [5, 26, 76]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [27, 60, 20]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [13, 67, 27]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [9, 47, 51]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [9, 51, 47]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "A2",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [6, 36, 65]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [7, 21, 89]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [38, 40, 39]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [20, 46, 51]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [11, 44, 62]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [12, 47, 58]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P1",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [12, 58, 47]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ADEMPIMENTO",
+    "LABEL": [0, 1, 2],
+    "DATA": [11, 42, 65]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CORRETTEZZA",
+    "LABEL": [0, 1, 2],
+    "DATA": [43, 36, 39]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "LESSICO",
+    "LABEL": [0, 1, 2],
+    "DATA": [20, 53, 45]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "IMPRESSIONE",
+    "LABEL": [0, 1, 2],
+    "DATA": [9, 46, 63]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "CAPACITA",
+    "LABEL": [0, 1, 2],
+    "DATA": [12, 59, 47]
+  },
+
+  {
+    "LEN": "ENG",
+    "ANNO": 2017,
+    "LIVELLO": "B1",
+    "PROVA": "PARLATO",
+    "DOMANDA": "P2",
+    "INDICATORE": "ORTOGRAFIA",
+    "LABEL": [0, 1, 2],
+    "DATA": [15, 68, 35]
   }
 ]
