@@ -307,8 +307,13 @@
         //     // }
         //     //inds.push($('select[name=INDICATORE2]').val())
         // });
-        console.log($('select[name=INDICATORE2]').val())
-        inds.push($('select[name=INDICATORE2]').val())
+        if (document.getElementById("SCRITTO").checked) {
+            inds.push($('select[name=INDICATORE2]').val())
+        }
+
+        if (document.getElementById("PARLATO").checked) {
+            inds.push($('select[name=INDICATORE3]').val())
+        }
         console.log(inds)
 
         filteredData = filteredData.filter(d => inds.includes(d.INDICATORE))

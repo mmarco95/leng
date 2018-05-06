@@ -111,6 +111,11 @@ option {
   font-size: 15px;
 }
 
+#INDICATORE3 {
+  font-weight: bold;
+  font-size: 15px;
+}
+
 #parlatobox {
   display: none;
 }
