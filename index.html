@@ -89,37 +89,41 @@
                         <article class="tile is-child">
                             <p class="title">Prova</p>
                             <input type="radio" name="prova" id="SCRITTO" onchange="IndicatoriScr()">
-                            <label for="SCR">
+                            <label for="SCRITTO">
                                 Scrittura
                             </label>
                             <br>
                             <input type="radio" name="prova" id="PARLATO" onchange="IndicatoriPar()">
-                            <label for="PAR">
+                            <label for="PARLATO">
                                 Parlato
                             </label>
 
                         </article>
                         <article class="tile is-child">
                             <p class="title">Tipo domanda</p>
-                            <input type="checkbox" id="P1">
-                            <label for="P1">
-                                P1
-                            </label>
-                            <br>
-                            <input type="checkbox" id="P2">
-                            <label for="P2">
-                                P2
-                            </label>
-                            <br>
-                            <input type="checkbox" name="S1" id="S1">
-                            <label for="S1" id="S1color">
-                                S1
-                            </label>
-                            <br>
-                            <input type="checkbox" name="S2" id="S2" onchange="modificaIndicatore()">
-                            <label for="S2">
-                                S2
-                            </label>
+                            <div id="parlatobox">
+                                <input type="checkbox" id="P1">
+                                <label for="P1">
+                                    P1
+                                </label>
+                                <br>
+                                <input type="checkbox" id="P2">
+                                <label for="P2">
+                                    P2
+                                </label>
+                                <br>
+                            </div>
+                            <div id="scrittobox">
+                                <input type="checkbox" name="S1" id="S1">
+                                <label for="S1" id="S1color">
+                                    S1
+                                </label>
+                                <br>
+                                <input type="checkbox" name="S2" id="S2" onchange="modificaIndicatore()">
+                                <label for="S2">
+                                    S2
+                                </label>
+                            </div>
                         </article>
 
                     </div>
@@ -619,14 +623,38 @@
     function IndicatoriScr() {
         if (document.getElementById("SCRITTO").checked) {
             $("#indicatoriScr").toggle();
+            $("#scrittobox").toggle();
+
+
         }
+        if ($("#indicatoriPar").is(":visible")) {
+            $("#indicatoriPar").toggle();
+            $("#parlatobox").toggle();
+            document.getElementById("S1").checked = false;
+            document.getElementById("S2").checked = false;
+        }
+
     }
 
     function IndicatoriPar() {
         if (document.getElementById("PARLATO").checked) {
             $("#indicatoriPar").toggle();
+            $("#parlatobox").toggle();
+
+
+        }
+        if ($("#indicatoriScr").is(":visible")) {
+            $("#indicatoriScr").toggle();
+            $("#scrittobox").toggle();
+            document.getElementById("P1").checked = false;
+            document.getElementById("P2").checked = false;
+
+
+
         }
     }
+
+
 </script>
 
 </html>
