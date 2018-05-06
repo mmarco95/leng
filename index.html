@@ -13,20 +13,20 @@
 
 <body>
     <div id="corpo">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                        <div class="navbar-item">
-                            <img src="logo.png" width="112" height="30">
-    
-                        </div>
-                        <div class="navbar-item content has-text-centered" id="testo">
-                            TRENTINO LANGUAGE TESTING
-                        </div>
-    
-                    </div>
-                </nav>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <img src="logo.png" width="112" height="30">
+
+                </div>
+                <div class="navbar-item content has-text-centered" id="testo">
+                    TRENTINO LANGUAGE TESTING
+                </div>
+
+            </div>
+        </nav>
         <div id="sinistra">
-            
+
             <div class="container">
                 <div class="tile is-ancestor">
                     <div class="tile is-parent is-vertical">
@@ -56,10 +56,10 @@
                             </label>
                             <br>
 
-                            <input type="checkbox" disabled name="2018">
+                            <!-- <input type="checkbox" disabled name="2018">
                             <label for="2018" disabled>
                                 2018
-                            </label>
+                            </label> -->
 
                             <!-- <a class="button is-rounded" id="confronta" onclick="confronta()">Confronta</a> -->
                         </article>
@@ -83,17 +83,17 @@
                                 B1
                             </label>
                         </article>
-                   
 
-                    
+
+
                         <article class="tile is-child">
                             <p class="title">Prova</p>
-                            <input type="checkbox" id="SCR" checked>
+                            <input type="radio" id="SCR" checked>
                             <label for="SCR">
                                 Scrittura
                             </label>
                             <br>
-                            <input type="checkbox" disabled id="PAR">
+                            <input type="radio" disabled id="PAR">
                             <label for="PAR">
                                 Parlato
                             </label>
@@ -112,7 +112,7 @@
                             </label>
                             <br>
                             <input type="checkbox" name="S1" id="S1">
-                            <label for="S1">
+                            <label for="S1" id="S1color">
                                 S1
                             </label>
                             <br>
@@ -157,7 +157,7 @@
                     </div>
                 </div>
             </div>
-        
+
 
             <div class="content has-text-centered">
                 <a class="button is-rounded" id="confronta" onclick="bivio()">Visualizza</a>
@@ -186,8 +186,8 @@
             dati = d;
         })
 
-    function bivio(){
-        if ( (document.getElementById("2017").checked ) &&  document.getElementById("2016").checked){
+    function bivio() {
+        if ((document.getElementById("2017").checked) && document.getElementById("2016").checked) {
             confronta();
         }
         else
@@ -261,7 +261,7 @@
         // ["LESSICO", "CORRETTEZZA", "ADEMPIMENTO-2017", "COERENZA", "CAPACITA", "OPINIONI", "SENTIMENTI", "IMPRESSIONE", "ORTOGRAFIA"].map((ind) => {
         //     let indicatore = ind.split("-")[0]
         //     console.log(indicatore)
-           
+
         //     // console.log( $('select[name=INDICATORE2]').val())
         //     // if ($(`#${ind}`).is(":selected")) {
         //     //     //indicatore = ind.split("-")[0]
@@ -532,6 +532,10 @@
 
     function modificaDomanda() {
         set("S1", !document.getElementById("A1").checked)
+        if (document.getElementById("A1").checked)
+            $("#S1color").css("color", "rgba(0,0,0,0.2)")
+        else
+            $("#S1color").css("color", "rgba(0,0,0,1)")
     }
 
     function modificaIndicatore() {
@@ -553,24 +557,24 @@
         }
     }
 
-    function visualizza2016(){
+    function visualizza2016() {
         if (document.getElementById("2016").checked) {
-           $("#INDICATORE2 option[value=IMPRESSIONE").attr('disabled',"disabled");
-            $("#INDICATORE2 option[value=ORTOGRAFIA").attr('disabled',"disabled");
-    }
-        else{
-            $("#INDICATORE2 option[value=IMPRESSIONE").removeAttr('disabled',"enab");
-            $("#INDICATORE2 option[value=ORTOGRAFIA").removeAttr('disabled',"disabled");
+            $("#INDICATORE2 option[value=IMPRESSIONE").attr('disabled', "disabled");
+            $("#INDICATORE2 option[value=ORTOGRAFIA").attr('disabled', "disabled");
+        }
+        else {
+            $("#INDICATORE2 option[value=IMPRESSIONE").removeAttr('disabled', "enab");
+            $("#INDICATORE2 option[value=ORTOGRAFIA").removeAttr('disabled', "disabled");
         }
     }
 
-    function visualizza2017(){
+    function visualizza2017() {
         if (document.getElementById("2017").checked) {
-            $("#INDICATORE2 option[value=SENTIMENTI").attr('disabled',"disabled");
-            $("#INDICATORE2 option[value=OPINIONI").attr('disabled',"disabled");
-            $("#INDICATORE2 option[value=COERENZA").attr('disabled',"disabled");
+            $("#INDICATORE2 option[value=SENTIMENTI").attr('disabled', "disabled");
+            $("#INDICATORE2 option[value=OPINIONI").attr('disabled', "disabled");
+            $("#INDICATORE2 option[value=COERENZA").attr('disabled', "disabled");
         }
-        else{
+        else {
             $("#INDICATORE2 option[value=SENTIMENTI").removeAttr('disabled');
             $("#INDICATORE2 option[value=OPINIONI").removeAttr('disabled');
             $("#INDICATORE2 option[value=COERENZA").removeAttr('disabled');
