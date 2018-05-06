@@ -1156,7 +1156,7 @@
     "LIVELLO": "A2",
     "PROVA": "PARLATO",
     "DOMANDA": "P1",
-    "INDICATORE": "COERENZA",
+    "INDICATORE": "TEMPO",
     "LABEL": [0, 1, 2],
     "DATA": [489, 665, 242]
   },
@@ -1246,7 +1246,7 @@
     "LIVELLO": "A2",
     "PROVA": "PARLATO",
     "DOMANDA": "P2",
-    "INDICATORE": "COERENZA",
+    "INDICATORE": "PRONUNCIA",
     "LABEL": [0, 1, 2],
     "DATA": [521, 638, 227]
   },
@@ -1276,7 +1276,7 @@
     "LIVELLO": "B1",
     "PROVA": "PARLATO",
     "DOMANDA": "P1",
-    "INDICATORE": "COERENZA",
+    "INDICATORE": "PRONUNCIA",
     "LABEL": [0, 1, 2],
     "DATA": [76, 151, 112]
   },
@@ -1326,7 +1326,7 @@
     "LIVELLO": "B1",
     "PROVA": "PARLATO",
     "DOMANDA": "P2",
-    "INDICATORE": "COERENZA",
+    "INDICATORE": "PRONUNCIA",
     "LABEL": [0, 1, 2],
     "DATA": [145, 116, 82]
   },
@@ -1346,7 +1346,7 @@
     "LIVELLO": "B1",
     "PROVA": "PARLATO",
     "DOMANDA": "P2",
-    "INDICATORE": "SENTIMENTI",
+    "INDICATORE": "FLUENZA",
     "LABEL": [0, 1, 2],
     "DATA": [206, 62, 75]
   },
@@ -1386,7 +1386,7 @@
     "LIVELLO": "A2",
     "PROVA": "PARLATO",
     "DOMANDA": "P1",
-    "INDICATORE": "COERENZA",
+    "INDICATORE": "PRONUNCIA",
     "LABEL": [0, 1, 2],
     "DATA": [340, 741, 359]
   },
@@ -1476,7 +1476,7 @@
     "LIVELLO": "A2",
     "PROVA": "PARLATO",
     "DOMANDA": "P2",
-    "INDICATORE": "COERENZA",
+    "INDICATORE": "PRONUNCIA",
     "LABEL": [0, 1, 2],
     "DATA": [331, 737, 365]
   },
@@ -1506,7 +1506,7 @@
     "LIVELLO": "B1",
     "PROVA": "PARLATO",
     "DOMANDA": "P1",
-    "INDICATORE": "COERENZA",
+    "INDICATORE": "PRONUNCIA",
     "LABEL": [0, 1, 2],
     "DATA": [64, 173, 247]
   },
@@ -1556,7 +1556,7 @@
     "LIVELLO": "B1",
     "PROVA": "PARLATO",
     "DOMANDA": "P2",
-    "INDICATORE": "COERENZA",
+    "INDICATORE": "PRONUNCIA",
     "LABEL": [0, 1, 2],
     "DATA": [107, 206, 165]
   },
@@ -1576,7 +1576,7 @@
     "LIVELLO": "B1",
     "PROVA": "PARLATO",
     "DOMANDA": "P2",
-    "INDICATORE": "SENTIMENTI",
+    "INDICATORE": "FLUENZA",
     "LABEL": [0, 1, 2],
     "DATA": [134, 178, 166]
   },
