@@ -149,7 +149,7 @@
                         <article class="tile is-child">
                             <p class="title">Indicatori Parlato</p>
                             <div id="indicatoriPar">
-                                <select name="INDICATORE2" id="INDICATORE2">
+                                <select name="INDICATORE3" id="INDICATORE3">
                                     <option value="LESSICO">Lessico</option>
                                     <option value="CORRETTEZZA">Correttezza competenze formali</option>
                                     <option value="PRONUNCIA">Pronuncia</option>
@@ -372,11 +372,22 @@
 
         //console.log("dati filtrati per livello: ", filteredData)
 
+        let prove = [];
 
+        ["SCRITTO", "PARLATO"].map((prova) => {
+            if ($(`#${prova}`).is(":checked"))
+                prove.push(prova)
+        });
+
+        console.log(prove)
+
+        filteredData = filteredData.filter(d => prove.includes(d.PROVA))
+
+        console.log("dati filtrati per prova: ", filteredData)
 
         let types = [];
 
-        ["S1", "S2"].map((type) => {
+        ["S1", "S2", "P1", "P2"].map((type) => {
             if ($(`#${type}`).is(":checked"))
                 types.push(type)
         });
@@ -396,8 +407,14 @@
         // });
 
         // console.log(inds)
+        if (document.getElementById("SCRITTO").checked) {
+            inds.push($('select[name=INDICATORE2]').val())
+        }
 
-        inds.push($('select[name=INDICATORE2]').val())
+        if (document.getElementById("PARLATO").checked) {
+            inds.push($('select[name=INDICATORE3]').val())
+        }
+
 
         filteredData = filteredData.filter(d => inds.includes(d.INDICATORE))
 
@@ -443,6 +460,9 @@
             }
         }
 
+        if (comparati.length == 0)
+            alert("Nessun dato corrispondente ai filtri inseriti")
+
         comparati.map(row => {
             let ctx = document.createElement("canvas")
             let title = document.createElement("h1")
@@ -460,6 +480,7 @@
         })
 
         console.log("--------------------------------")
+
 
     }
 
@@ -648,9 +669,6 @@
             $("#scrittobox").toggle();
             document.getElementById("P1").checked = false;
             document.getElementById("P2").checked = false;
-
-
-
         }
     }
 
