@@ -126,7 +126,7 @@
 
                     <div class="tile is-parent is-vertical">
                         <article class="tile is-child">
-                            <p class="title">Indicatori 2016 e 2017</p>
+                            <p class="title">Indicatori</p>
                             <div id="indicatori2016">
                                 <select name="INDICATORE2" id="INDICATORE2">
                                     <option value="LESSICO">Lessico</option>
@@ -136,6 +136,8 @@
                                     <option value="CAPACITA">Capacità comunicativa e descrittive</option>
                                     <option value="OPINIONI">Capacità esprimere proprie opinioni</option>
                                     <option value="SENTIMENTI">Capacità esprimere i propri sentimenti</option>
+                                    <option value="IMPRESSIONE">Impressione generale</option>
+                                    <option value="ORTOGRAFIA">Ortografia e punteggiatura</option>
                                 </select>
                             </div>
                         </article>
@@ -143,15 +145,15 @@
 
 
 
-                        <article class="tile is-child">
+                        <!-- <article class="tile is-child">
                             <p class="title">Indicatori solo 2017</p>
                             <div id="indicatori2017">
                                 <select name="INDICATORE2" id="INDICATORE2">
                                         <option value="IMPRESSIONE">Impressione generale</option>
-                                        <option value="ORTOGRAFIA">Ortigrafia e punteggiatura</option>   
+                                        <option value="ORTOGRAFIA">Ortografia e punteggiatura</option>   
                                     </select>
                             </div>
-                        </article>
+                        </article> -->
                     </div>
                 </div>
             </div>
@@ -551,27 +553,27 @@
         }
     }
 
-    function visualizza2017() {
-        if (document.getElementById("2017").checked) {
-            $("#indicatori2017").toggle();
+    // function visualizza2017() {
+    //     if (document.getElementById("2017").checked) {
+    //         $("#indicatori2017").toggle();
           
-        }
+    //     }
 
-        if(!document.getElementById("2017").checked){
-            $("#indicatori2017").toggle();
-        }
-    }
+    //     if(!document.getElementById("2017").checked){
+    //         $("#indicatori2017").toggle();
+    //     }
+    // }
 
-    function visualizza2016() {
-        if (document.getElementById("2016").checked) {
-            $("#indicatori2016").toggle();
+    // function visualizza2016() {
+    //     if (document.getElementById("2016").checked) {
+    //         $("#indicatori2016").toggle();
 
-        }
+    //     }
 
-        if(!document.getElementById("2016").checked){
-            $("#indicatori2016").toggle();
-        }
-    }
+    //     if(!document.getElementById("2016").checked){
+    //         $("#indicatori2016").toggle();
+    //     }
+    // }
 </script>
 
 </html>
