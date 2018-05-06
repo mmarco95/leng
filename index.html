@@ -13,19 +13,20 @@
 
 <body>
     <div id="corpo">
-        <div id="sinistra">
             <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <div class="navbar-item">
-                        <img src="logo.png" width="112" height="30">
-
+                    <div class="navbar-brand">
+                        <div class="navbar-item">
+                            <img src="logo.png" width="112" height="30">
+    
+                        </div>
+                        <div class="navbar-item content has-text-centered" id="testo">
+                            TRENTINO LANGUAGE TESTING
+                        </div>
+    
                     </div>
-                    <div class="navbar-item content has-text-centered" id="testo">
-                        TRENTINO LANGUAGE TESTING
-                    </div>
-
-                </div>
-            </nav>
+                </nav>
+        <div id="sinistra">
+            
             <div class="container">
                 <div class="tile is-ancestor">
                     <div class="tile is-parent is-vertical">
@@ -177,11 +178,14 @@
                                     Capacità esprimere i propri sentimenti
                                 </label>
                                 <br> -->
-                                <select>
-                                    <option value="volvo">Correttezza competenze formali</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
+                                <select name="INDICATORE2" id="INDICATORE2">
+                                    <option value="LESSICO">Lessico</option>
+                                    <option value="CORRETTEZZA">Correttezza competenze formali</option>
+                                    <option value="ADEMPIMENTO">Adempimento alla consegna</option>
+                                    <option value="COERENZA">Coerenza e Coesione</option>
+                                    <option value="CAPACITA">Capacità comunicativa e descrittive</option>
+                                    <option value="OPINIONI">Capacità esprimere proprie opinioni</option>
+                                    <option value="SENTIMENTI">Capacità esprimere i propri sentimenti</option>
                                 </select>
                             </div>
                         </article>
@@ -212,7 +216,7 @@
                                 Capacità descrittive
                             </label>
                             <br> -->
-                                <input type="radio" name="ind2017" id="IMPRESSIONE">
+                                <!-- <input type="radio" name="ind2017" id="IMPRESSIONE">
                                 <label for="IMPRESSIONE">
                                     Impressione generale
                                 </label>
@@ -220,7 +224,13 @@
                                 <input type="radio" name="ind2017" id="ORTOGRAFIA">
                                 <label for="ORTOGRAFIA">
                                     Ortografia e punteggiatura
-                                </label>
+                                </label> -->
+
+                                <select name="INDICATORE2" id="INDICATORE2">
+                                        <option value="IMPRESSIONE">Impressione generale</option>
+                                        <option value="ORTOGRAFIA">Ortigrafia e punteggiatura</option>
+    
+                                    </select>
                             </div>
                         </article>
                     </div>
@@ -229,7 +239,7 @@
 
             <div class="content has-text-centered">
 
-                <a class="button is-rounded" id="confronta" onclick="visualizza()">Visualizza</a>
+                <a class="button is-rounded" id="confronta" onclick="bivio()">Visualizza</a>
             </div>
         </div>
 
@@ -254,6 +264,14 @@
         .then(d => {
             dati = d;
         })
+
+    function bivio(){
+        if ( (document.getElementById("2017").checked ) &&  document.getElementById("2016").checked){
+            confronta();
+        }
+        else
+            visualizza();
+    }
 
 
     function visualizza() {
@@ -319,17 +337,19 @@
 
         let inds = [];
 
-        ["LESSICO", "CORRETTEZZA", "ADEMPIMENTO-2017", "COERENZA", "CAPACITA", "OPINIONI", "SENTIMENTI", "IMPRESSIONE", "ORTOGRAFIA"].map((ind) => {
-            let indicatore = ind.split("-")[0]
-            console.log(indicatore)
-            if ($(`#${ind}`).is(":checked")) {
-                // if(ind.contains("-"))
-                //     indicatore = ind.split("-")[0]
-                inds.push(indicatore)
-
-            }
-        });
-
+        // ["LESSICO", "CORRETTEZZA", "ADEMPIMENTO-2017", "COERENZA", "CAPACITA", "OPINIONI", "SENTIMENTI", "IMPRESSIONE", "ORTOGRAFIA"].map((ind) => {
+        //     let indicatore = ind.split("-")[0]
+        //     console.log(indicatore)
+           
+        //     // console.log( $('select[name=INDICATORE2]').val())
+        //     // if ($(`#${ind}`).is(":selected")) {
+        //     //     //indicatore = ind.split("-")[0]
+        //     //     inds.push(indicatore)
+        //     // }
+        //     //inds.push($('select[name=INDICATORE2]').val())
+        // });
+        console.log($('select[name=INDICATORE2]').val())
+        inds.push($('select[name=INDICATORE2]').val())
         console.log(inds)
 
         filteredData = filteredData.filter(d => inds.includes(d.INDICATORE))
@@ -409,12 +429,14 @@
 
         let inds = [];
 
-        ["LESSICO", "CORRETTEZZA", "ADEMPIMENTO", "COERENZA", "CAPACITA", "OPINIONI", "SENTIMENTI"].map((ind) => {
-            if ($(`#${ind}`).is(":checked"))
-                inds.push(ind)
-        });
+        // ["LESSICO", "CORRETTEZZA", "ADEMPIMENTO", "COERENZA", "CAPACITA", "OPINIONI", "SENTIMENTI"].map((ind) => {
+        //     if ($(`#${ind}`).is(":checked"))
+        //         inds.push(ind)
+        // });
 
         // console.log(inds)
+
+        inds.push($('select[name=INDICATORE2]').val())
 
         filteredData = filteredData.filter(d => inds.includes(d.INDICATORE))
 
