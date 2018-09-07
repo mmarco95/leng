@@ -6,7 +6,6 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="bulma.css">
     <link rel="stylesheet" type="text/css" href="css.css">
-
 </head>
 <script src="https://cdnjs.com/libraries/Chart.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -191,9 +190,7 @@
 <script>
 
 
-
     let dati = [];
-
 
     fetch('provascrit.json')
         .then(resp => resp.json())
@@ -221,11 +218,9 @@
                 lingue.push(lingua)
         });
 
-        console.log(lingue)
-
         filteredData = dati.filter(d => lingue.includes(d.LEN))
 
-        console.log("dati filtrati per lingua: ", filteredData)
+
 
 
         let anni = [];
@@ -240,11 +235,6 @@
         filteredData = filteredData.filter(d => anni.includes(d.ANNO))
 
         console.log("dati filtrati per anno: ", filteredData)
-
-
-
-
-
 
 
         let levels = [];
@@ -623,7 +613,7 @@
             $("#INDICATORE2 option[value=ORTOGRAFIA").attr('disabled', "disabled");
         }
         else {
-            $("#INDICATORE2 option[value=IMPRESSIONE").removeAttr('disabled', "enab");
+            $("#INDICATORE2 option[value=IMPRESSIONE").removeAttr('disabled', "disabled");
             $("#INDICATORE2 option[value=ORTOGRAFIA").removeAttr('disabled', "disabled");
         }
     }
